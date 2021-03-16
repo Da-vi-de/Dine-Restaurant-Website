@@ -14,29 +14,96 @@
 </head>
 <body>
 
-  Reservations
+      <!-- Booking header -->
+  <section class="booking-hero">
+    <h3 class="website-name">dine</h3>
+    <h2 class="hero-intro">Reservations</h2>
+    <p class="hero-description">
+      We can’t wait to host you. If you have any special requirements please feel free to 
+      call on the phone number below. We’ll be happy to accommodate you.
+    </p>
+    <a href="#" class="btn btn-secondary">Reserve Place</a>
+  </section>
 
-  We can’t wait to host you. If you have any special requirements please feel free to 
-  call on the phone number below. We’ll be happy to accommodate you.
+       <!-- Form -->
+  <section class="booking-container">
 
+    <div class="card-container">
 
+      <form>
+        <label aria-label="Your name is required">
+          <input type = "text" placeholder="Name">
+        </label>
 
-  Name
-  Email
-  Pick a date
-  Pick a time
+        <br>
 
-  Make Reservation
+        <label aria-label="Your email address is required">
+          <input type = "email" placeholder="Email">
+        </label>
 
+        <br>
 
+          <label aria-label="Please pick a date">Pick a date</label>
+          <label aria-label="Type the month" >
+            <input type="number" placeholder="MM">
+          </label>
+          <label aria-label="Type the day" >
+            <input type="number" placeholder="DD">
+          </label>
+          <label aria-label="Type the year" >
+            <input type="number" placeholder="YYYY">
+          </label>
+          
+        <br>
 
-  Marthwaite, Sedbergh
-  Cumbria
-  +00 44 123 4567
+         <label aria-label="Please pick a time">Pick a time</label>
+         <label aria-label="Type the hour" >
+          <input type="number" placeholder="09">
+        </label>
+        <label aria-label="Type the minutes" >
+          <input type="number" placeholder="00">
+        </label>
+        <label aria-label="Choose am or pm" >
+          <input type="text" placeholder="AM">
+        </label>
 
-  Open Times
-  Mon - Fri: 09:00 AM - 10:00 PM
-  Sat - Sun: 09:00 AM - 11:30 PM
+        <br>
 
+          <img src="./images/icons/icon-minus.svg" 
+          alt="minus icon for decreasing number of booked people"
+          >
+          <label aria-label="How many people for?">4 people</label>
+          <img src="./images/icons/icon-plus.svg" 
+          alt="plus icon for increasing number of booked people"
+          >
+
+        <br>
+
+          <label aria-label="Submit to make the reservation">
+            <input type = "submit" value = "make reservation">
+          </label> 
+      </form>
+    </div>
+  </section>
+
+       <!-- Footer -->
+  <footer class="footer-bottom">
+
+    <div class="footer-info">
+      <h2 class="website-name">dine</h2>
+    </div>
+    
+    <div class="footer-info">
+      <p class="footer-info-text">Marthwaite, Sedbergh</p>
+      <p class="footer-info-text">Cumbria</p>
+      <p class="footer-info-text">+00 44 123 4567</p>
+    </div>
+
+    <div class="footer-info">
+      <p class="footer-info-text">Open Times</p>
+      <p class="footer-info-text">Mon - Fri: 09:00 AM - 10:00 PM</p>
+      <p class="footer-info-text">Sat - Sun: 09:00 AM - 11:30 PM</p>
+    </div>
+  </footer>
 </body>
 </html>
