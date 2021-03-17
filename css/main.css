@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Spartan', sans-serif;
+  line-height: 1.4; }
+
+h2, h3, strong {
+  font-weight: 700; }
+
+/* =================
+    Color Variables
+   ================= */
+/* ===================
+      Font Variables
+   =================== */
