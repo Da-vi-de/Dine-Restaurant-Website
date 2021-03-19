@@ -4,10 +4,37 @@
 body {
   margin: 0;
   font-family: 'Spartan', sans-serif;
+  font-size: 1rem;
   line-height: 1.4; }
 
 h2, h3, strong {
   font-weight: 700; }
+
+a {
+  text-decoration: none; }
+
+/* ==================
+       hero area
+   ================== */
+.hero {
+  padding: 8em 0;
+  display: grid;
+  grid-template-columns: minmax(2em, 2fr) minmax(0, 500px) minmax(2em, 2fr);
+  background-image: url(../images/homepage/hero-bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff; }
+
+.hero > * {
+  grid-column: 1 / -1; }
+
+.btn {
+  text-transform: uppercase; }
+
+.btn-primary {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 1em 2em; }
 
 /* =================
     Color Variables
@@ -15,3 +42,17 @@ h2, h3, strong {
 /* ===================
       Font Variables
    =================== */
+.hero-group {
+  text-align: center; }
+
+.website-name {
+  font-size: 2rem; }
+
+.hero-intro {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1.2; }
+
+.hero-description {
+  font-size: 0.87rem;
+  padding: 0 0.2em 2em 0.2em; }
