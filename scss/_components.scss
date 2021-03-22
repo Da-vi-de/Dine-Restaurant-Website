@@ -1,0 +1,23 @@
+/* ==================
+        Buttons
+   ================== */
+.btn {
+    text-transform: uppercase;
+    
+}
+
+.btn-primary {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 1em 2em;
+}
+
+/* ==================
+        Patterns
+   ================== */
+.pattern-divide {
+    background-image: url(../images/patterns/pattern-divide.svg);
+    background-repeat: no-repeat;
+    background-size: 5em;
+    padding-left: 3em;
+}

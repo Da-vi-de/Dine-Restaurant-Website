@@ -1,28 +1,34 @@
 /* ==================
-       hero area
+       Hero area
    ================== */
 .hero {
-    padding: 8em 0;
     display: grid;
-    grid-template-columns: minmax(2em, 2fr) minmax(0, 500px) minmax(2em, 2fr);
+    grid-template-columns: minmax(1, 1fr);
+    padding: 8em 0;
     background-image: url(../images/homepage/hero-bg-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
 }
 
-.hero > * {
-    grid-column: 1 / -1;
+.content-container {
+    display: grid;
+    grid-template-rows: minmax(1.5em, 1.5fr)  minmax(1em, 1fr);
+    padding: 1em 1.5em;
 }
 
-.btn {
-    text-transform: uppercase;
-    
+.row-image-1 {
+    background-image: url(../images/homepage/enjoyable-place-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.btn-primary {
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 1em 2em;
+.row-image-2 {
+    background-image: url(../images/homepage/locally-sourced-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
+
+
+
 

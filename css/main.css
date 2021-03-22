@@ -1,3 +1,9 @@
+/* =================
+    Color Variables
+   ================= */
+/* ===================
+      Font Variables
+   =================== */
 * {
   box-sizing: border-box; }
 
@@ -10,24 +16,42 @@ body {
 h2, h3, strong {
   font-weight: 700; }
 
+p {
+  font-size: 0.87rem; }
+
 a {
   text-decoration: none; }
 
 /* ==================
-       hero area
+       Hero area
    ================== */
 .hero {
-  padding: 8em 0;
   display: grid;
-  grid-template-columns: minmax(2em, 2fr) minmax(0, 500px) minmax(2em, 2fr);
+  grid-template-columns: minmax(1, 1fr);
+  padding: 8em 0;
   background-image: url(../images/homepage/hero-bg-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff; }
 
-.hero > * {
-  grid-column: 1 / -1; }
+.content-container {
+  display: grid;
+  grid-template-rows: minmax(1.5em, 1.5fr) minmax(1em, 1fr);
+  padding: 1em 1.5em; }
 
+.row-image-1 {
+  background-image: url(../images/homepage/enjoyable-place-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.row-image-2 {
+  background-image: url(../images/homepage/locally-sourced-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+/* ==================
+        Buttons
+   ================== */
 .btn {
   text-transform: uppercase; }
 
@@ -36,23 +60,24 @@ a {
   border: 1px solid #fff;
   padding: 1em 2em; }
 
-/* =================
-    Color Variables
-   ================= */
-/* ===================
-      Font Variables
-   =================== */
-.hero-group {
-  text-align: center; }
+/* ==================
+        Patterns
+   ================== */
+.pattern-divide {
+  background-image: url(../images/patterns/pattern-divide.svg);
+  background-repeat: no-repeat;
+  background-size: 5em;
+  padding-left: 3em; }
 
-.website-name {
-  font-size: 2rem; }
+.text-position {
+  text-align: center; }
 
 .hero-intro {
   font-weight: 300;
-  font-size: 2rem;
   line-height: 1.2; }
 
 .hero-description {
-  font-size: 0.87rem;
   padding: 0 0.2em 2em 0.2em; }
+
+.description-text {
+  font-size: 0.87rem; }
