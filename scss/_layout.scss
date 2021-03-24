@@ -1,20 +1,55 @@
 /* ==================
-       Hero area
+          Hero 
    ================== */
 .hero {
-    display: grid;
-    grid-template-columns: minmax(1, 1fr);
-    padding: 8em 0;
+    margin: auto;
+    position: relative;
+    padding: 8em 0.5em; 
     background-image: url(../images/homepage/hero-bg-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
 }
 
+/* ==================
+    Website content
+   ================== */
 .content-container {
+    width: 80%;
+    margin-left: 1.75em;
+}
+
+.enjoy-place-img {
+  position: relative;
+  top: -1em;
+}
+
+.enjoy-place-img,
+.locally-sourced-img {
+    width: 100%;
+    height: auto;
+}
+
+/* ==================
+     Menu highlights
+   ================== */
+.highlights-container {
+    padding: 2em 1em;
+    background-color: $color-cod-grey;
+}
+
+.salmon-img,
+.beef-img,
+.chocolate-img {
+    width: 100%;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+/*.content-container {
     display: grid;
     grid-template-rows: minmax(1.5em, 1.5fr)  minmax(1em, 1fr);
-    padding: 1em 1.5em;
+    padding: 1em 1.5em; 
 }
 
 .row-image-1 {
@@ -27,7 +62,25 @@
     background-image: url(../images/homepage/locally-sourced-mobile.jpg);
     background-repeat: no-repeat;
     background-size: contain;
+} 
+
+ .menu-img-1 {
+    background-image: url(../images/homepage/salmon-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
+
+.menu-img-2 {
+    background-image: url(../images/homepage/beef-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menu-img-3 {
+    background-image: url(../images/homepage/chocolate-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
 
 
 

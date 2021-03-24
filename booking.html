@@ -31,57 +31,59 @@
     <div class="card-container">
 
       <form>
-        <label aria-label="Your name is required">
-          <input type = "text" placeholder="Name">
-        </label>
+
+        <label for="name">Your name is required</label>
+          <input id="name" type = "text" placeholder="Name">
 
         <br>
 
-        <label aria-label="Your email address is required">
-          <input type = "email" placeholder="Email">
-        </label>
+        <label for="email">Your email address is required</label>
+          <input id="email" type = "email" placeholder="Email">
 
         <br>
 
-          <label aria-label="Please pick a date">Pick a date</label>
-          <label aria-label="Type the month" >
-            <input type="number" placeholder="MM">
-          </label>
-          <label aria-label="Type the day" >
-            <input type="number" placeholder="DD">
-          </label>
-          <label aria-label="Type the year" >
-            <input type="number" placeholder="YYYY">
-          </label>
+          <span>Pick a date</span>
+          <label for="month">Type the month</label>
+            <input id="month" type="number" placeholder="MM">
+         
+          <label for="day">Type the day</label>
+            <input id="day" type="number" placeholder="DD">
+          
+          <label for="year" aria-label="Type the year"></label>
+            <input id="year" type="number" placeholder="YYYY">
           
         <br>
 
-         <label aria-label="Please pick a time">Pick a time</label>
-         <label aria-label="Type the hour" >
-          <input type="number" placeholder="09">
-        </label>
-        <label aria-label="Type the minutes" >
-          <input type="number" placeholder="00">
-        </label>
-        <label aria-label="Choose am or pm" >
-          <input type="text" placeholder="AM">
-        </label>
-
+          <span>Pick a time</span>
+          <label>Pick a time</label>
+          <label for="hour">Type the hour</label>
+          <input id="hour" type="number" placeholder="09">
+        
+          <label for="minutes">Type the minutes</label>
+          <input id="minutes" type="number" placeholder="00">
+        
+          <label for="idl">Choose am or pm</label>             <!-- idt stands for: Intenational Date Line -->
+          <input id="idl" type="text" placeholder="AM">
+      
         <br>
 
           <img src="./images/icons/icon-minus.svg" 
           alt="minus icon for decreasing number of booked people"
           >
-          <label aria-label="How many people for?">4 people</label>
+          <span>4 people</span>
+          <label>
+            How many people for? Click on your left for decreasing,
+            on your right for increasing
+           </label>
           <img src="./images/icons/icon-plus.svg" 
           alt="plus icon for increasing number of booked people"
           >
 
         <br>
 
-          <label aria-label="Submit to make the reservation">
-            <input type = "submit" value = "make reservation">
-          </label> 
+          <label for="submit">Submit to make the reservation</label> 
+          <input id="submit" type = "submit" value = "make reservation">
+          
       </form>
     </div>
   </div>
