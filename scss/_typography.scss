@@ -15,7 +15,17 @@
     font-size: $font-size-xxsm;
 }
 
-.highlights-text {
+.highlights-text,
+.footer-title,
+.footer-info {
     color: $color-white;
+}
+
+.slider-text {
+    line-height: 2;
+    padding-right: 1.5em;
+    text-transform: uppercase;
+    color: $color-shuttle-gray;
+    font-size: $font-size-xsm;
 }
 

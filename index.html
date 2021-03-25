@@ -41,12 +41,14 @@
         <!-- <div class="row-image-1"></div> -->
 
         <div class="row-1">
-
+      <picture>
+        <source media="(min-width: 500px)" srcset="./images/homepage/enjoyable-place-tablet.jpg">
         <img 
-        src="./images/homepage/enjoyable-place-mobile.jpg" 
+        src="./images/homepage/enjoyable-place-mobile.jpg"
         alt="A valley with sheeps and a house in distance"
         class="enjoy-place-img"
         >
+      </picture>
           <article class="text-position ">
             <h2 class="content-text">Enjoyable place for all the family</h2>
             <p class="description-text"> 
@@ -150,47 +152,50 @@
       
       <div class="slider-container">
 
-        <div class="slider-image"></div>
+        <!-- <div class="slider-image"></div> -->
 
         <div class="col-5">
-          <article>
+          <img src="./images/homepage/family-gathering-mobile.jpg" 
+          alt="Happy people having lunch"
+          class="family-gathering-img">
+          <ul>
+            <li><a href="#" class="slider-text underline">Family Gathering</a></li>
+            <li><a href="#" class="slider-text">Special Events</a></li>
+            <li><a href="#" class="slider-text">Social Events</a></li>
+          </ul>
+
+          <article class="text-position">
             <h2 class="content-text">Family Gathering</h2>
             <p class="description-text">
               We love catering for entire families. So please bring everyone along for a special meal with your 
               loved ones. We’ll provide a memorable experience for all.
             </p>
+            <a href="/booking.html" 
+            class="btn btn-secondary" 
+            target="_self"
+            >
+            Book a table
+           </a>
          </article>
         </div>
-        <a href="/booking.html" 
-         class="btn btn-primary" 
-         target="_self">
-         Book a table
-       </a>
-
-       <ul>
-         <li><a href="#">Family Gathering</a></li>
-         <li><a href="#">Special Events</a></li>
-         <li><a href="#">Social Events</a></li>
-       </ul>
       </div>
-
     </div>
 
           <!--Footer-->
     <footer class="footer-container">
 
-      <div class="footer-bg-image">
+      <div class="footer-bg-img text-position">
         <h2 class="footer-title">Ready to make a reservation?</h2>
         <a href="/booking.html" 
-         class="btn btn-secondary" 
+         class="btn btn-primary" 
          target="_self">
          Book a table
        </a>
       </div>
 
-      <div class="footer-bottom">
+      <div class="footer-bottom text-position">
 
-        <div class="footer-info">
+        <div class="footer-title">
           <h2 class="website-name"><strong>dine</strong></h2>
         </div>
         

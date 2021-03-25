@@ -1,23 +1,39 @@
-/* ==================
-        Buttons
-   ================== */
 .btn {
     text-transform: uppercase;
-    
-}
-
-.btn-primary {
-    color: #fff;
-    border: 1px solid #fff;
     padding: 1em 2em;
 }
 
-/* ==================
-        Patterns
-   ================== */
-.pattern-divide {
-    background-image: url(../images/patterns/pattern-divide.svg);
-    background-repeat: no-repeat;
-    background-size: 5em;
-    padding-left: 3em;
+.btn-primary {
+    color: $color-white;
+    border: 1px solid $color-white;
+
+    &:hover {
+        color: $color-cod-grey;
+        background-color: $color-white;
+    }
+}
+
+.btn-secondary {
+    color: $color-cod-grey;
+    border: 1px solid $color-cod-grey;
+    background-color: $color-white;
+
+    &:hover {
+        color: $color-white;
+        background-color: $color-cod-grey;
+    }
+}
+
+a {
+    display: inline-block;
+}
+
+.underline::after {
+    content: '';
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    top: 24.14%;
+    bottom: 75%;
+    border: 0.2px solid $color-beaver;
 }
