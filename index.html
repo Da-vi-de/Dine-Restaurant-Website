@@ -185,36 +185,26 @@
     <footer class="footer-container">
 
       <div class="footer-bg-img text-position">
-        <h2 class="footer-title">Ready to make a reservation?</h2>
+        <h2 class="footer-text">Ready to make a reservation?</h2>
         <a href="/booking.html" 
          class="btn btn-primary" 
          target="_self">
          Book a table
        </a>
       </div>
-
-      <div class="footer-bottom text-position">
-
-        <div class="footer-title">
-          <h2 class="website-name"><strong>dine</strong></h2>
-        </div>
-        
-        <div class="footer-info">
-          <p class="footer-info-text">Marthwaite, Sedbergh</p>
-          <p class="footer-info-text">Cumbria</p>
-          <p class="footer-info-text">+00 44 123 4567</p>
-        </div>
-
-        <div class="footer-info">
-          <p class="footer-info-text">Open Times</p>
-          <p class="footer-info-text">Mon - Fri: 09:00 AM - 10:00 PM</p>
-          <p class="footer-info-text">Sat - Sun: 09:00 AM - 11:30 PM</p>
-        </div>
-
-      </div>
+                <!--index and booking share the same footer bottom,
+                so i noticed i was repeating the code, i created a separate 
+                file (kind of component) so that can be included where needed. 
+                I did some research and i found more ways, i chose this one which 
+                is the  easyest and the best in my personal opinion -->
+      <iframe 
+      src="footer-bottom.html" 
+      onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"
+      >
+      </iframe>
     </footer>
-</body>
-</html>
+  </body>
+  </html> 
 
       <!-- 
          <div class="slider-image-2"></div>

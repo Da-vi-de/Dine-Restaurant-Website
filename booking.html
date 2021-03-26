@@ -22,7 +22,7 @@
       We can’t wait to host you. If you have any special requirements please feel free to 
       call on the phone number below. We’ll be happy to accommodate you.
     </p>
-    <a href="#" class="btn btn-secondary">Reserve Place</a>
+    <a href="#" class="btn btn-primary">Reserve Place</a>
   </header>
 
        <!-- Form -->
@@ -43,26 +43,26 @@
         <br>
 
           <span>Pick a date</span>
-          <label for="month">Type the month</label>
+          <label for="month">Choose the month</label>
             <input id="month" type="number" placeholder="MM">
          
-          <label for="day">Type the day</label>
+          <label for="day">Choose the day</label>
             <input id="day" type="number" placeholder="DD">
           
-          <label for="year" aria-label="Type the year"></label>
+          <label for="year">Choose the year</label>
             <input id="year" type="number" placeholder="YYYY">
           
         <br>
 
           <span>Pick a time</span>
           <label>Pick a time</label>
-          <label for="hour">Type the hour</label>
+          <label for="hour">Choose the hour</label>
           <input id="hour" type="number" placeholder="09">
         
-          <label for="minutes">Type the minutes</label>
+          <label for="minutes">Choose the minutes</label>
           <input id="minutes" type="number" placeholder="00">
         
-          <label for="idl">Choose am or pm</label>             <!-- idt stands for: Intenational Date Line -->
+          <label for="idl">Choose am or pm</label>             <!-- idl stands for: Intenational Date Line -->
           <input id="idl" type="text" placeholder="AM">
       
         <br>
@@ -71,10 +71,7 @@
           alt="minus icon for decreasing number of booked people"
           >
           <span>4 people</span>
-          <label>
-            How many people for? Click on your left for decreasing,
-            on your right for increasing
-           </label>
+        
           <img src="./images/icons/icon-plus.svg" 
           alt="plus icon for increasing number of booked people"
           >
@@ -88,24 +85,9 @@
     </div>
   </div>
 
-       <!-- Footer -->
-  <footer class="footer-bottom">
+  <iframe 
+  src="footer-bottom.html" 
+  onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"
+  >
+  </iframe>
 
-    <div class="footer-info">
-      <h2 class="website-name"><strong>dine</strong></h2>
-    </div>
-    
-    <div class="footer-info">
-      <p class="footer-info-text">Marthwaite, Sedbergh</p>
-      <p class="footer-info-text">Cumbria</p>
-      <p class="footer-info-text">+00 44 123 4567</p>
-    </div>
-
-    <div class="footer-info">
-      <p class="footer-info-text">Open Times</p>
-      <p class="footer-info-text">Mon - Fri: 09:00 AM - 10:00 PM</p>
-      <p class="footer-info-text">Sat - Sun: 09:00 AM - 11:30 PM</p>
-    </div>
-  </footer>
-</body>
-</html>

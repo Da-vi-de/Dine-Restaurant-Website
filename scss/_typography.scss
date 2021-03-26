@@ -2,6 +2,10 @@
     text-align: center;
 }
 
+.website-name {
+    font-size: $font-size-md;
+}
+
 .hero-intro {
     font-weight: 300;
     line-height: 1.2;
@@ -16,6 +20,7 @@
 }
 
 .highlights-text,
+.footer-text,
 .footer-title,
 .footer-info {
     color: $color-white;
@@ -27,5 +32,10 @@
     text-transform: uppercase;
     color: $color-shuttle-gray;
     font-size: $font-size-xsm;
+}
+
+.footer-text,
+.footer-title {
+    font-size: $font-size-mds;
 }
 

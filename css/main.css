@@ -77,9 +77,6 @@ label {
     background-image: url(../images/homepage/ready-bg-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover; }
-  .footer-container .footer-bottom {
-    background-color: #121212;
-    padding: 2em 0; }
   .footer-container .footer-info {
     text-transform: uppercase; }
 
@@ -149,8 +146,15 @@ a {
   bottom: 75%;
   border: 0.2px solid #9e7f67; }
 
+.footer-bottom {
+  background-color: #121212;
+  padding: 2em 0; }
+
 .text-position {
   text-align: center; }
+
+.website-name {
+  font-size: 2rem; }
 
 .hero-intro {
   font-weight: 300;
@@ -163,6 +167,7 @@ a {
   font-size: 0.87rem; }
 
 .highlights-text,
+.footer-text,
 .footer-title,
 .footer-info {
   color: white; }
@@ -173,3 +178,7 @@ a {
   text-transform: uppercase;
   color: #5c687a;
   font-size: 0.9375rem; }
+
+.footer-text,
+.footer-title {
+  font-size: 1.5rem; }
