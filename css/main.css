@@ -80,6 +80,18 @@ label {
   .footer-container .footer-info {
     text-transform: uppercase; }
 
+/* =================
+     Booking page
+   ================= */
+.booking-hero {
+  margin: auto;
+  position: relative;
+  padding: 4em 1em;
+  background-image: url(../images/booking/hero-bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff; }
+
 /*.content-container {
     display: grid;
     grid-template-rows: minmax(1.5em, 1.5fr)  minmax(1em, 1fr);
@@ -149,6 +161,52 @@ a {
 .footer-bottom {
   background-color: #121212;
   padding: 2em 0; }
+
+/* =================
+         Form
+   ================= */
+fieldset {
+  position: relative;
+  top: -3em;
+  margin: 1em 1em;
+  padding: 1.5em 0;
+  border: 0.2px solid white;
+  background-color: white;
+  -webkit-box-shadow: 0 5px 10px #5c687a;
+  -moz-box-shadow: 0 5px 10px #5c687a;
+  box-shadow: 0 5px 10px #5c687a;
+  text-align: center;
+  line-height: 2; }
+
+hr, .credentials-style {
+  width: 80%; }
+
+hr, input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #5c687a; }
+
+input[type=number],
+.idl-choice {
+  width: 25%; }
+  input[type=number]:placeholder-shown,
+  .idl-choice:placeholder-shown {
+    text-align: center; }
+
+:placeholder-shown {
+  padding: 0.5em 0; }
+
+.time-form-style {
+  white-space: nowrap; }
+
+.idl-choice {
+  background-image: url(../images/icons/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 0.9375rem;
+  background-position: right; }
+
+.sign-icon {
+  padding: 0 2.5em; }
 
 .text-position {
   text-align: center; }

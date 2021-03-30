@@ -16,71 +16,82 @@
 
       <!-- Booking header -->
   <header class="booking-hero">
-    <h1 class="website-name"><strong>dine</strong></h1>
-    <h1 class="hero-intro">Reservations</h1>
-    <p class="hero-description">
-      We can’t wait to host you. If you have any special requirements please feel free to 
-      call on the phone number below. We’ll be happy to accommodate you.
-    </p>
-    <a href="#" class="btn btn-primary">Reserve Place</a>
+
+    <section class="text-position">
+      <h1 class="website-name"><strong>dine</strong></h1>
+      <h1 class="hero-intro">Reservations</h1>
+      <p class="hero-description">
+        We can’t wait to host you. If you have any special requirements please feel free to 
+        call on the phone number below. We’ll be happy to accommodate you.
+      </p>
+      <a href="#" class="btn btn-primary">Reserve Place</a>
+    </section>
   </header>
 
        <!-- Form -->
-  <div class="booking-container">
-
-    <div class="card-container">
-
       <form>
+        <fieldset>
 
         <label for="name">Your name is required</label>
-          <input id="name" type = "text" placeholder="Name">
+          <input id="name" type = "text" placeholder="Name" class="credentials-style">
 
         <br>
 
         <label for="email">Your email address is required</label>
-          <input id="email" type = "email" placeholder="Email">
+          <input id="email" type = "email" placeholder="Email" class="credentials-style">
 
         <br>
 
-          <span>Pick a date</span>
-          <label for="month">Choose the month</label>
-            <input id="month" type="number" placeholder="MM">
-         
-          <label for="day">Choose the day</label>
-            <input id="day" type="number" placeholder="DD">
+            <span>Pick a date</span>
+
+          <div class="time-form-style">
+            <label for="month">Choose the month</label>
+              <input id="month" type="number" placeholder="MM">
           
-          <label for="year">Choose the year</label>
-            <input id="year" type="number" placeholder="YYYY">
-          
+            <label for="day">Choose the day</label>
+              <input id="day" type="number" placeholder="DD">
+            
+            <label for="year">Choose the year</label>
+              <input id="year" type="number" placeholder="YYYY">
+          </div>
+
         <br>
 
-          <span>Pick a time</span>
-          <label>Pick a time</label>
-          <label for="hour">Choose the hour</label>
-          <input id="hour" type="number" placeholder="09">
-        
-          <label for="minutes">Choose the minutes</label>
-          <input id="minutes" type="number" placeholder="00">
-        
-          <label for="idl">Choose am or pm</label>             <!-- idl stands for: Intenational Date Line -->
-          <input id="idl" type="text" placeholder="AM">
-      
+            <span>Pick a time</span>
+            <label>Pick a time</label>
+
+          <div class="time-form-style">
+            <label for="hour">Choose hour</label>
+            <input id="hour" type="number" placeholder="09">
+          
+            <label for="minutes">Choose minutes</label>
+            <input id="minutes" type="number" placeholder="00">
+          
+            <label for="idl">Choose am or pm</label>             <!-- idl stands for: Intenational Date Line -->
+            <input id="idl" type="text" placeholder="AM" class="idl-choice">
+          </div>
+
         <br>
 
           <img src="./images/icons/icon-minus.svg" 
           alt="minus icon for decreasing number of booked people"
+          class="sign-icon"
           >
-          <span>4 people</span>
+          <span><strong>4 people</strong></span>
         
           <img src="./images/icons/icon-plus.svg" 
           alt="plus icon for increasing number of booked people"
+          class="sign-icon"
           >
+
+          <hr>
 
         <br>
 
           <label for="submit">Submit to make the reservation</label> 
-          <input id="submit" type = "submit" value = "make reservation">
-          
+          <input id="submit" type = "submit" value = "make reservation" class="btn btn-secondary">
+
+        </fieldset>
       </form>
     </div>
   </div>

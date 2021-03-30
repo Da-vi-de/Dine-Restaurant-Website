@@ -42,3 +42,59 @@ a {
     background-color: $color-cod-grey;
     padding: 2em 0;
 }
+
+/* =================
+         Form
+   ================= */
+fieldset {
+    position: relative;
+    top: -3em;
+    margin: 1em 1em;
+    padding: 1.5em 0;
+    border: 0.2px solid $color-white;
+    background-color: $color-white;
+    -webkit-box-shadow: 0 5px 10px $color-shuttle-gray;
+    -moz-box-shadow: 0 5px 10px $color-shuttle-gray;
+    box-shadow: 0 5px 10px $color-shuttle-gray;
+    text-align: center;
+    line-height: 2;
+}
+
+hr, .credentials-style {
+    width: 80%;
+}
+
+hr, input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $color-shuttle-gray;
+}
+
+input[type=number],
+.idl-choice {
+    width: 25%;
+
+    &:placeholder-shown {
+        text-align: center;
+  }      
+}
+
+:placeholder-shown {
+    padding: 0.5em 0;
+}
+
+.time-form-style {
+    white-space: nowrap;
+}
+
+.idl-choice {
+    background-image: url(../images/icons/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: $font-size-xsm;
+    background-position: right;
+}
+
+.sign-icon {
+    padding: 0 2.5em;
+}
+
