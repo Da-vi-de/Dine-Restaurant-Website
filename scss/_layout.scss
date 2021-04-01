@@ -39,6 +39,7 @@
 .beef-img,
 .chocolate-img {
     width: 100%;
+    padding-top: 0.5em;
 }
 
 .footer-container {
@@ -57,19 +58,62 @@
   }
 }
 
-/* =================
-     Booking page
-   ================= */
+.booking-hero {
+margin: auto;
+position: relative;
+padding: 4em 1em; 
+background-image: url(../images/booking/hero-bg-mobile.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+color: #fff; 
+}
 
-   .booking-hero {
-    margin: auto;
-    position: relative;
-    padding: 4em 1em; 
-    background-image: url(../images/booking/hero-bg-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff; 
-   }
+@media all and (min-width: 23.4375em) {
+    .hero {
+        padding: 10em 0.5em;
+    }
+
+    .content-container,
+    .slider-container {
+        margin-left: 2em;
+    } 
+}
+
+@media all and (min-width: 31.25em) {
+    .hero {
+        background-image: url(../images/homepage/hero-bg-tablet.jpg);
+        padding: 11em 0.5em;
+    }
+
+    .enjoy-place-img {
+        top: -4em;
+    }
+
+    .content-container,
+    .slider-container {
+        margin-left: 3em;
+    }
+
+    .highlights-container {
+        padding: 4em 4em;        
+    }
+
+    .highlights {
+        display: flex;
+    }
+
+    .salmon-img,
+    .beef-img,
+    .chocolate-img {
+        width: 8em;
+        height: 6em;
+        padding-right: 2em;
+    }
+
+    .line {
+        width: 100%;
+    }
+}
 
 
 

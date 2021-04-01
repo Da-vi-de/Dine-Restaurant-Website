@@ -1,3 +1,4 @@
+.hero-text-position, 
 .text-position {
     text-align: center;
 }
@@ -20,6 +21,7 @@
 }
 
 .highlights-text,
+.highlights-intro,
 .footer-text,
 .footer-title,
 .footer-info {
@@ -37,4 +39,40 @@
 .footer-text,
 .footer-title {
     font-size: $font-size-mds;
+}
+
+
+@media all and (min-width: 31.25em) {
+    .hero-intro {
+        padding: 0 2em;
+        font-size: $font-size-md;
+    }
+
+    .hero-description {
+        font-size: $font-size-xsm;
+    }
+
+    .hero-text-position {
+        padding: 1em 2em;
+    }
+
+    .highlights-intro {
+        padding-bottom: 2em;
+    }
+
+    .menu-intro {
+        padding: 0 3em;
+    }
+
+    .highlights-text {
+        text-align: left;
+    }
+
+    .dish-title {
+        font-size: $font-size-menu-heading;
+    }
+
+    .dish-description {
+        font-size: $font-size-menu-paragraph;
+    }
 }

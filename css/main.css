@@ -67,7 +67,8 @@ label {
 .salmon-img,
 .beef-img,
 .chocolate-img {
-  width: 100%; }
+  width: 100%;
+  padding-top: 0.5em; }
 
 .footer-container {
   display: flex;
@@ -80,9 +81,6 @@ label {
   .footer-container .footer-info {
     text-transform: uppercase; }
 
-/* =================
-     Booking page
-   ================= */
 .booking-hero {
   margin: auto;
   position: relative;
@@ -91,6 +89,35 @@ label {
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff; }
+
+@media all and (min-width: 23.4375em) {
+  .hero {
+    padding: 10em 0.5em; }
+  .content-container,
+  .slider-container {
+    margin-left: 2em; } }
+
+@media all and (min-width: 31.25em) {
+  .hero {
+    background-image: url(../images/homepage/hero-bg-tablet.jpg);
+    padding: 11em 0.5em; }
+  .enjoy-place-img {
+    top: -4em; }
+  .content-container,
+  .slider-container {
+    margin-left: 3em; }
+  .highlights-container {
+    padding: 4em 4em; }
+  .highlights {
+    display: flex; }
+  .salmon-img,
+  .beef-img,
+  .chocolate-img {
+    width: 8em;
+    height: 6em;
+    padding-right: 2em; }
+  .line {
+    width: 100%; } }
 
 /*.content-container {
     display: grid;
@@ -208,6 +235,7 @@ input[type=number],
 .sign-icon {
   padding: 0 2.5em; }
 
+.hero-text-position,
 .text-position {
   text-align: center; }
 
@@ -225,6 +253,7 @@ input[type=number],
   font-size: 0.87rem; }
 
 .highlights-text,
+.highlights-intro,
 .footer-text,
 .footer-title,
 .footer-info {
@@ -240,3 +269,22 @@ input[type=number],
 .footer-text,
 .footer-title {
   font-size: 1.5rem; }
+
+@media all and (min-width: 31.25em) {
+  .hero-intro {
+    padding: 0 2em;
+    font-size: 2rem; }
+  .hero-description {
+    font-size: 0.9375rem; }
+  .hero-text-position {
+    padding: 1em 2em; }
+  .highlights-intro {
+    padding-bottom: 2em; }
+  .menu-intro {
+    padding: 0 3em; }
+  .highlights-text {
+    text-align: left; }
+  .dish-title {
+    font-size: 0.8rem; }
+  .dish-description {
+    font-size: 0.7rem; } }
