@@ -98,3 +98,15 @@ input[type=number],
     padding: 0 2.5em;
 }
 
+/* =================
+     Tablet Style
+   ================= */
+   @media all and (min-width: 31.25em) {
+       fieldset {
+        margin: 2em 3em;
+       }
+
+       .credentials-style {
+        padding-top: 1em;
+       }
+   }

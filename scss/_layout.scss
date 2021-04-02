@@ -52,10 +52,10 @@
         background-repeat: no-repeat;
         background-size: cover;
   }
+}
 
-    & .footer-info {
-        text-transform: uppercase;
-  }
+.footer-info-text {
+    text-transform: uppercase;
 }
 
 .booking-hero {
@@ -79,6 +79,9 @@ color: #fff;
     } 
 }
 
+/* =================
+     Tablet Style
+   ================= */
 @media all and (min-width: 31.25em) {
     .hero {
         background-image: url(../images/homepage/hero-bg-tablet.jpg);
@@ -112,6 +115,24 @@ color: #fff;
 
     .line {
         width: 100%;
+    }
+
+    .slider {
+        display: flex;
+    }
+
+    .footer-bottom {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer-info {
+        padding-top: 1em;
+        text-align: left;
+    }
+
+    .footer-info-bottom {
+        padding-top: 1.5em;
     }
 }
 

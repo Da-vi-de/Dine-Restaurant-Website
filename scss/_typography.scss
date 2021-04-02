@@ -24,7 +24,7 @@
 .highlights-intro,
 .footer-text,
 .footer-title,
-.footer-info {
+.footer-info-text {
     color: $color-white;
 }
 
@@ -41,7 +41,9 @@
     font-size: $font-size-mds;
 }
 
-
+/* =================
+     Tablet Style
+   ================= */
 @media all and (min-width: 31.25em) {
     .hero-intro {
         padding: 0 2em;
@@ -61,7 +63,7 @@
     }
 
     .menu-intro {
-        padding: 0 3em;
+        padding: 0 2em;
     }
 
     .highlights-text {
@@ -69,10 +71,25 @@
     }
 
     .dish-title {
-        font-size: $font-size-menu-heading;
+        font-size: $font-size-tablet-sm;
     }
 
     .dish-description {
-        font-size: $font-size-menu-paragraph;
+        font-size: $font-size-tablet-xsm;
+    }
+
+    .slider-text {
+        line-height: 1.4;
+        white-space: nowrap;
+        font-size: $font-size-tablet-xxsm;
+    }
+
+    .description-text {
+        padding: 0 2em;
+    }
+
+    .footer-info-text {
+        font-size: $font-size-tablet-xsm;
+        line-height: 1;
     }
 }

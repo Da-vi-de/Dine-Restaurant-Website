@@ -78,8 +78,9 @@ label {
     background-image: url(../images/homepage/ready-bg-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover; }
-  .footer-container .footer-info {
-    text-transform: uppercase; }
+
+.footer-info-text {
+  text-transform: uppercase; }
 
 .booking-hero {
   margin: auto;
@@ -97,6 +98,9 @@ label {
   .slider-container {
     margin-left: 2em; } }
 
+/* =================
+     Tablet Style
+   ================= */
 @media all and (min-width: 31.25em) {
   .hero {
     background-image: url(../images/homepage/hero-bg-tablet.jpg);
@@ -117,7 +121,17 @@ label {
     height: 6em;
     padding-right: 2em; }
   .line {
-    width: 100%; } }
+    width: 100%; }
+  .slider {
+    display: flex; }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-around; }
+  .footer-info {
+    padding-top: 1em;
+    text-align: left; }
+  .footer-info-bottom {
+    padding-top: 1.5em; } }
 
 /*.content-container {
     display: grid;
@@ -235,6 +249,15 @@ input[type=number],
 .sign-icon {
   padding: 0 2.5em; }
 
+/* =================
+     Tablet Style
+   ================= */
+@media all and (min-width: 31.25em) {
+  fieldset {
+    margin: 2em 3em; }
+  .credentials-style {
+    padding-top: 1em; } }
+
 .hero-text-position,
 .text-position {
   text-align: center; }
@@ -256,7 +279,7 @@ input[type=number],
 .highlights-intro,
 .footer-text,
 .footer-title,
-.footer-info {
+.footer-info-text {
   color: white; }
 
 .slider-text {
@@ -270,6 +293,9 @@ input[type=number],
 .footer-title {
   font-size: 1.5rem; }
 
+/* =================
+     Tablet Style
+   ================= */
 @media all and (min-width: 31.25em) {
   .hero-intro {
     padding: 0 2em;
@@ -281,10 +307,19 @@ input[type=number],
   .highlights-intro {
     padding-bottom: 2em; }
   .menu-intro {
-    padding: 0 3em; }
+    padding: 0 2em; }
   .highlights-text {
     text-align: left; }
   .dish-title {
     font-size: 0.8rem; }
   .dish-description {
-    font-size: 0.7rem; } }
+    font-size: 0.7rem; }
+  .slider-text {
+    line-height: 1.4;
+    white-space: nowrap;
+    font-size: 0.65rem; }
+  .description-text {
+    padding: 0 2em; }
+  .footer-info-text {
+    font-size: 0.7rem;
+    line-height: 1; } }
