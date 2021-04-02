@@ -136,6 +136,17 @@ color: #fff;
     }
 }
 
+@media all and (min-width: 43.75em) {
+    .hero {
+        padding: 14em 0.5em;
+    }
+
+    .content-container,
+    .slider-container {
+        margin-left: 4.5em;
+    }
+}
+
 
 
 

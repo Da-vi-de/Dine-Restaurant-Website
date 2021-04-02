@@ -110,3 +110,9 @@ input[type=number],
         padding-top: 1em;
        }
    }
+
+   @media all and (min-width: 43.75em) {
+    fieldset {
+        margin: 1em 6em;
+       }
+   }

@@ -93,3 +93,35 @@
         line-height: 1;
     }
 }
+
+@media all and (min-width: 43.75em) {
+    .hero-intro {
+        padding: 0 4.5em;
+    }
+
+    .hero-description {
+        padding: 0 6em 2em 6em;
+    }
+
+    .content-text {
+        padding: 0 4em;
+        font-size: $font-size-md;
+    }
+
+    .description-text {
+        padding: 0 8em 2em 8em;  
+    }
+
+    .menu-intro,
+    .menu-description {
+        padding: 0 7em;
+    }
+
+    .dish-description {
+        padding-right: 7em;
+    }
+
+    .slider-text {
+        font-size: $font-size-xxsm;
+    }
+}

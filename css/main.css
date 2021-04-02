@@ -133,6 +133,13 @@ label {
   .footer-info-bottom {
     padding-top: 1.5em; } }
 
+@media all and (min-width: 43.75em) {
+  .hero {
+    padding: 14em 0.5em; }
+  .content-container,
+  .slider-container {
+    margin-left: 4.5em; } }
+
 /*.content-container {
     display: grid;
     grid-template-rows: minmax(1.5em, 1.5fr)  minmax(1em, 1fr);
@@ -258,6 +265,10 @@ input[type=number],
   .credentials-style {
     padding-top: 1em; } }
 
+@media all and (min-width: 43.75em) {
+  fieldset {
+    margin: 1em 6em; } }
+
 .hero-text-position,
 .text-position {
   text-align: center; }
@@ -323,3 +334,21 @@ input[type=number],
   .footer-info-text {
     font-size: 0.7rem;
     line-height: 1; } }
+
+@media all and (min-width: 43.75em) {
+  .hero-intro {
+    padding: 0 4.5em; }
+  .hero-description {
+    padding: 0 6em 2em 6em; }
+  .content-text {
+    padding: 0 4em;
+    font-size: 2rem; }
+  .description-text {
+    padding: 0 8em 2em 8em; }
+  .menu-intro,
+  .menu-description {
+    padding: 0 7em; }
+  .dish-description {
+    padding-right: 7em; }
+  .slider-text {
+    font-size: 0.87rem; } }
