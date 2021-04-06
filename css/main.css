@@ -140,6 +140,34 @@ label {
   .slider-container {
     margin-left: 4.5em; } }
 
+/* =================
+     Desktop Style
+   ================= */
+@media all and (min-width: 56.25em) {
+  .hero {
+    background-image: url(../images/homepage/hero-bg-desktop@2x.jpg);
+    padding: 6em 0; }
+  .content-container {
+    position: relative; }
+  .enjoy-place-img,
+  .locally-sourced-img {
+    width: 20em;
+    height: 23em; }
+  .locally-sourced-img {
+    position: absolute;
+    top: -5em;
+    left: 26em; }
+  .desk-content-text-pos-1 {
+    position: absolute;
+    width: 26.875em;
+    top: 3em; }
+  .right {
+    left: 23.5em; }
+  .desk-content-text-pos-2 {
+    position: relative;
+    width: 26em;
+    right: 4em; } }
+
 /*.content-container {
     display: grid;
     grid-template-rows: minmax(1.5em, 1.5fr)  minmax(1em, 1fr);
@@ -269,6 +297,9 @@ input[type=number],
   fieldset {
     margin: 1em 6em; } }
 
+/* =================
+    Desktop Style
+================= */
 .hero-text-position,
 .text-position {
   text-align: center; }
@@ -352,3 +383,21 @@ input[type=number],
     padding-right: 7em; }
   .slider-text {
     font-size: 0.87rem; } }
+
+/* =================
+     Desktop Style
+   ================= */
+@media all and (min-width: 56.25em) {
+  .hero-text-position {
+    max-width: 50%;
+    margin-left: 2.5em;
+    text-align: left; }
+  .hero-intro,
+  .hero-description {
+    padding: 0; }
+  .hero-intro {
+    font-size: 2.8rem; }
+  .content-text {
+    font-size: 1.5rem; }
+  .description-text {
+    text-align: center; } }

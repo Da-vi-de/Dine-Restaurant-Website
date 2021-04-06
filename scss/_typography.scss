@@ -125,3 +125,31 @@
         font-size: $font-size-xxsm;
     }
 }
+
+/* =================
+     Desktop Style
+   ================= */
+@media all and (min-width: 56.25em) {
+    .hero-text-position {
+        max-width: 50%;
+        margin-left: 2.5em;
+        text-align: left;
+    }
+
+    .hero-intro,
+    .hero-description  {
+      padding: 0;
+    }
+
+    .hero-intro {
+        font-size: $font-size-desktop-md;
+    }
+
+    .content-text {
+        font-size: $font-size-mds;
+    }
+
+    .description-text {
+        text-align: center;
+    }
+}
