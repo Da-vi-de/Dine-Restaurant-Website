@@ -120,4 +120,12 @@ input[type=number],
 /* =================
     Desktop Style
 ================= */ 
-@media all and (min-width: 56.25em) {}
+@media all and (min-width: 56.25em) {
+   .btn-footer-desktop {
+       margin-right: 2em;
+   }
+
+   fieldset {
+       margin: 0.5em 13em;
+   }
+}

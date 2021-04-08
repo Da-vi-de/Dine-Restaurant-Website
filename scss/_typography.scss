@@ -41,6 +41,10 @@
     font-size: $font-size-mds;
 }
 
+.footer-info-text {
+    text-transform: uppercase;
+}
+
 /* =================
      Tablet Style
    ================= */
@@ -152,4 +156,16 @@
     .description-text {
         text-align: center;
     }
+
+    .menu-description {
+        padding: 0 10em;
+  }
+
+    .footer-text {
+        margin-right: 1em;
+  }
+
+  .booking-hero-desk {
+      padding: 0 10em;
+  }
 }

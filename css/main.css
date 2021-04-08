@@ -79,8 +79,8 @@ label {
     background-repeat: no-repeat;
     background-size: cover; }
 
-.footer-info-text {
-  text-transform: uppercase; }
+.footer-info-bottom {
+  padding-top: 1em; }
 
 .booking-hero {
   margin: auto;
@@ -131,7 +131,8 @@ label {
     padding-top: 1em;
     text-align: left; }
   .footer-info-bottom {
-    padding-top: 1.5em; } }
+    padding-top: 1.5em;
+    text-align: left; } }
 
 @media all and (min-width: 43.75em) {
   .hero {
@@ -166,7 +167,13 @@ label {
   .desk-content-text-pos-2 {
     position: relative;
     width: 26em;
-    right: 4em; } }
+    right: 4em; }
+  .family-gathering-img {
+    width: 33.75em;
+    height: 37.5em;
+    margin-left: 6em; }
+  .slider {
+    margin-left: 7em; } }
 
 /*.content-container {
     display: grid;
@@ -300,6 +307,12 @@ input[type=number],
 /* =================
     Desktop Style
 ================= */
+@media all and (min-width: 56.25em) {
+  .btn-footer-desktop {
+    margin-right: 2em; }
+  fieldset {
+    margin: 0.5em 13em; } }
+
 .hero-text-position,
 .text-position {
   text-align: center; }
@@ -334,6 +347,9 @@ input[type=number],
 .footer-text,
 .footer-title {
   font-size: 1.5rem; }
+
+.footer-info-text {
+  text-transform: uppercase; }
 
 /* =================
      Tablet Style
@@ -400,4 +416,10 @@ input[type=number],
   .content-text {
     font-size: 1.5rem; }
   .description-text {
-    text-align: center; } }
+    text-align: center; }
+  .menu-description {
+    padding: 0 10em; }
+  .footer-text {
+    margin-right: 1em; }
+  .booking-hero-desk {
+    padding: 0 10em; } }

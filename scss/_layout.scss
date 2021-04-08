@@ -54,8 +54,8 @@
   }
 }
 
-.footer-info-text {
-    text-transform: uppercase;
+.footer-info-bottom {
+    padding-top: 1em;
 }
 
 .booking-hero {
@@ -133,6 +133,7 @@ color: #fff;
 
     .footer-info-bottom {
         padding-top: 1.5em;
+        text-align: left;
     }
 }
 
@@ -187,6 +188,16 @@ color: #fff;
        position: relative;
        width: 26em;
        right: 4em;
+   }
+
+   .family-gathering-img {
+       width: 33.75em;
+       height: 37.5em;
+       margin-left: 6em;
+   }
+
+   .slider {
+       margin-left: 7em;
    }
 }
 
