@@ -45,27 +45,27 @@
 .footer-container {
    display: flex;
    flex-direction: column;
-
-    & .footer-bg-img {
-        padding: 2.5em 1em;
-        background-image: url(../images/homepage/ready-bg-mobile.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-  }
 }
+
+.footer-bg-img {
+    padding: 2.5em 1em;
+    background-image: url(../images/homepage/ready-bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
 
 .footer-info-bottom {
     padding-top: 1em;
 }
 
 .booking-hero {
-margin: auto;
-position: relative;
-padding: 4em 1em; 
-background-image: url(../images/booking/hero-bg-mobile.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-color: #fff; 
+    margin: auto;
+    position: relative;
+    padding: 4em 1em; 
+    background-image: url(../images/booking/hero-bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff; 
 }
 
 @media all and (min-width: 23.4375em) {
@@ -121,6 +121,12 @@ color: #fff;
         display: flex;
     }
 
+    .footer-bg-img {
+        background-image: url(../images/homepage/ready-bg-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .footer-bottom {
         display: flex;
         justify-content: space-around;
@@ -173,7 +179,6 @@ color: #fff;
         left: 26em;
     }
 
- 
     .desk-content-text-pos-1 {
         position: absolute;
         width: 26.875em;
@@ -199,6 +204,62 @@ color: #fff;
    .slider {
        margin-left: 7em;
    }
+}
+
+@media all and (min-width: 75em) {
+    .enjoy-place-img,
+    .locally-sourced-img {
+        height: 25em;
+    }
+
+    .locally-sourced-img {
+        top: -8em;
+        left: 46em;
+    }
+
+   .right {
+       left: 40.5em;
+    }
+
+   .highlights-container {
+       display: flex;
+       padding: 2em 2em;
+    }
+
+   .highlights-desktop {
+        padding-top: 3em;
+    }
+
+   .slider-container-desk {
+       display: flex;
+    }
+
+   .slider-pos-desk {
+    display: flex;
+    flex-direction: column;
+    }
+
+   .slider {
+       display: unset;
+       order: 2;
+    }
+
+   .family-gathering-img {
+        width: 20em;
+        height: 25em;
+        margin-left: 0;
+    }
+
+    .footer-bg-img {
+        background-image: url(../images/homepage/ready-bg-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .footer-desk-pos {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 

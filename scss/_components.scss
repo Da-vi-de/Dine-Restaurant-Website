@@ -34,7 +34,7 @@ a {
     width: 30%;
     margin: 0 auto;
     top: 24.14%;
-    bottom: 75%;
+    bottom: 75%; 
     border: 0.2px solid $color-beaver;
 }
 
@@ -128,4 +128,15 @@ input[type=number],
    fieldset {
        margin: 0.5em 13em;
    }
+}
+
+@media all and (min-width: 75em) {
+    .btn-slider-desk {
+        margin: 0 6em 2em 0;
+    }
+
+    .btn-footer-desktop {
+        margin-right: 6em;
+        padding: 1.5em 2em 0 2em;
+    }
 }

@@ -73,11 +73,12 @@ label {
 .footer-container {
   display: flex;
   flex-direction: column; }
-  .footer-container .footer-bg-img {
-    padding: 2.5em 1em;
-    background-image: url(../images/homepage/ready-bg-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; }
+
+.footer-bg-img {
+  padding: 2.5em 1em;
+  background-image: url(../images/homepage/ready-bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .footer-info-bottom {
   padding-top: 1em; }
@@ -124,6 +125,10 @@ label {
     width: 100%; }
   .slider {
     display: flex; }
+  .footer-bg-img {
+    background-image: url(../images/homepage/ready-bg-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
   .footer-bottom {
     display: flex;
     justify-content: space-around; }
@@ -174,6 +179,40 @@ label {
     margin-left: 6em; }
   .slider {
     margin-left: 7em; } }
+
+@media all and (min-width: 75em) {
+  .enjoy-place-img,
+  .locally-sourced-img {
+    height: 25em; }
+  .locally-sourced-img {
+    top: -8em;
+    left: 46em; }
+  .right {
+    left: 40.5em; }
+  .highlights-container {
+    display: flex;
+    padding: 2em 2em; }
+  .highlights-desktop {
+    padding-top: 3em; }
+  .slider-container-desk {
+    display: flex; }
+  .slider-pos-desk {
+    display: flex;
+    flex-direction: column; }
+  .slider {
+    display: unset;
+    order: 2; }
+  .family-gathering-img {
+    width: 20em;
+    height: 25em;
+    margin-left: 0; }
+  .footer-bg-img {
+    background-image: url(../images/homepage/ready-bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .footer-desk-pos {
+    display: flex;
+    justify-content: space-between; } }
 
 /*.content-container {
     display: grid;
@@ -313,6 +352,13 @@ input[type=number],
   fieldset {
     margin: 0.5em 13em; } }
 
+@media all and (min-width: 75em) {
+  .btn-slider-desk {
+    margin: 0 6em 2em 0; }
+  .btn-footer-desktop {
+    margin-right: 6em;
+    padding: 1.5em 2em 0 2em; } }
+
 .hero-text-position,
 .text-position {
   text-align: center; }
@@ -423,3 +469,29 @@ input[type=number],
     margin-right: 1em; }
   .booking-hero-desk {
     padding: 0 10em; } }
+
+@media all and (min-width: 75em) {
+  .hero-text-position {
+    max-width: 37%; }
+  .content-text,
+  .description-text {
+    text-align: left; }
+  .content-text {
+    margin-left: 0.5em; }
+  .description-text {
+    width: 38em; }
+  .highlights-intro {
+    width: 70%;
+    padding-top: 5em; }
+  .menu-intro,
+  .menu-description {
+    text-align: left; }
+  .menu-description {
+    margin-left: 1.7em; }
+  .slider-text-desk {
+    margin-left: 15em;
+    order: 1; }
+  .slider-text {
+    line-height: 2.5; }
+  .footer-text {
+    margin-left: 3em; } }

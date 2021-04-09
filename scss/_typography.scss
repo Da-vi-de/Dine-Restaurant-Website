@@ -159,13 +159,59 @@
 
     .menu-description {
         padding: 0 10em;
-  }
+    }
 
     .footer-text {
         margin-right: 1em;
-  }
+    }
 
   .booking-hero-desk {
       padding: 0 10em;
+    }
+}
+
+@media all and (min-width: 75em) {
+  .hero-text-position {
+      max-width: 37%;
   }
+
+  .content-text,
+  .description-text {
+      text-align: left;
+  }
+
+  .content-text {
+      margin-left: 0.5em;
+  }
+
+  .description-text {
+      width: 38em;  
+  }
+
+  .highlights-intro {
+    width: 70%;
+    padding-top: 5em;
+  }
+  .menu-intro,
+  .menu-description {
+    text-align: left;
+  }
+
+  .menu-description {
+      margin-left: 1.7em;
+  }
+
+  .slider-text-desk {
+      margin-left: 15em;
+      order: 1;
+  }
+  
+  .slider-text {
+      line-height: 2.5;  
+  }
+
+  .footer-text {
+      margin-left: 3em;
+  }
+
 }
