@@ -137,16 +137,16 @@ label {
     text-align: left; }
   .footer-info-bottom {
     padding-top: 1.5em;
-    text-align: left; } }
+    text-align: left; }
+  .booking-hero {
+    background-image: url(../images/booking/hero-bg-tablet.jpg); } }
 
 @media all and (min-width: 43.75em) {
   .hero {
     padding: 14em 0.5em; }
   .content-container,
   .slider-container {
-    margin-left: 4.5em; }
-  .booking-hero {
-    background-image: url(../images/booking/hero-bg-tablet.jpg); } }
+    margin-left: 4.5em; } }
 
 /* =================
      Desktop Style
@@ -217,6 +217,16 @@ label {
     justify-content: space-between; }
   .booking-hero {
     background-image: url(../images/booking/hero-bg-desktop@2x.jpg); } }
+
+@media all and (min-width: 93.25em) {
+  .locally-sourced-img {
+    left: 63.75em; }
+  .right {
+    left: 58em; }
+  .family-gathering-img {
+    margin-left: 6.5em; }
+  .slider-pos-desk {
+    margin-left: 2.2em; } }
 
 /*.content-container {
     display: grid;
@@ -346,9 +356,14 @@ input[type=number],
   .credentials-style {
     padding-top: 1em; } }
 
+.sign-icon {
+  padding: 0 4em; }
+
 @media all and (min-width: 43.75em) {
   fieldset {
-    margin: 1em 6em; } }
+    margin: 1em 6em; }
+  .sign-icon {
+    padding: 0 5em; } }
 
 /* =================
     Desktop Style
@@ -357,7 +372,9 @@ input[type=number],
   .btn-footer-desktop {
     margin-right: 2em; }
   fieldset {
-    margin: 0.5em 13em; } }
+    margin: 0.5em 13em; }
+  .credentials-style {
+    padding-top: 1.5em; } }
 
 @media all and (min-width: 75em) {
   .btn-slider-desk {
@@ -370,7 +387,13 @@ input[type=number],
   fieldset {
     margin: 0 23em;
     left: 17em;
-    top: -15em; } }
+    top: -15em; }
+  .btn-footer-desktop {
+    margin-right: 9.5em; } }
+
+@media all and (min-width: 93.25em) {
+  fieldset {
+    margin: 0 32em; } }
 
 .hero-text-position,
 .text-position {
@@ -437,9 +460,14 @@ input[type=number],
     font-size: 0.65rem; }
   .description-text {
     padding: 0 2em; }
+  .footer-info {
+    margin-right: 1em; }
   .footer-info-text {
+    margin-right: 1em;
     font-size: 0.7rem;
-    line-height: 1; } }
+    line-height: 1; }
+  .footer-title {
+    padding: 0 1em; } }
 
 @media all and (min-width: 43.75em) {
   .hero-intro {
@@ -514,3 +542,10 @@ input[type=number],
   .booking-hero-desk {
     width: 22em;
     padding: 0; } }
+
+@media all and (min-width: 93.25em) {
+  .menu-description {
+    margin-left: 0;
+    padding: 0 12em; }
+  .footer-text {
+    margin-left: 6.5em; } }

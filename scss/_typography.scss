@@ -92,9 +92,18 @@
         padding: 0 2em;
     }
 
+    .footer-info {
+        margin-right: 1em;
+    }
+
     .footer-info-text {
+        margin-right: 1em;
         font-size: $font-size-tablet-xsm;
         line-height: 1;
+    }
+
+    .footer-title {
+        padding: 0 1em;
     }
 }
 
@@ -224,4 +233,15 @@
     padding: 0;
   }
 
+}
+
+@media all and (min-width: 93.25em) {
+    .menu-description {
+        margin-left: 0;
+        padding: 0 12em;
+    }
+
+    .footer-text {
+        margin-left: 6.5em;
+    }
 }

@@ -116,10 +116,18 @@ input[type=number],
        }
    }
 
+   .sign-icon {
+    padding: 0 4em;
+}
+
    @media all and (min-width: 43.75em) {
     fieldset {
         margin: 1em 6em;
        }
+
+       .sign-icon {
+        padding: 0 5em;
+     }
    }
 
 /* =================
@@ -132,6 +140,10 @@ input[type=number],
 
    fieldset {
        margin: 0.5em 13em;
+   }
+
+   .credentials-style {
+    padding-top: 1.5em;
    }
 }
 
@@ -153,5 +165,13 @@ input[type=number],
         top: -15em;
     }
 
+    .btn-footer-desktop {
+        margin-right: 9.5em;
+    }
+}
 
+@media all and (min-width: 93.25em) {
+    fieldset {
+        margin: 0 32em;
+    }
 }
