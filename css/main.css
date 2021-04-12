@@ -144,7 +144,9 @@ label {
     padding: 14em 0.5em; }
   .content-container,
   .slider-container {
-    margin-left: 4.5em; } }
+    margin-left: 4.5em; }
+  .booking-hero {
+    background-image: url(../images/booking/hero-bg-tablet.jpg); } }
 
 /* =================
      Desktop Style
@@ -212,7 +214,9 @@ label {
     background-size: cover; }
   .footer-desk-pos {
     display: flex;
-    justify-content: space-between; } }
+    justify-content: space-between; }
+  .booking-hero {
+    background-image: url(../images/booking/hero-bg-desktop@2x.jpg); } }
 
 /*.content-container {
     display: grid;
@@ -334,8 +338,11 @@ input[type=number],
      Tablet Style
    ================= */
 @media all and (min-width: 31.25em) {
+  .btn-display {
+    display: none; }
   fieldset {
-    margin: 2em 3em; }
+    margin: 2em 3em;
+    top: -4em; }
   .credentials-style {
     padding-top: 1em; } }
 
@@ -358,6 +365,12 @@ input[type=number],
   .btn-footer-desktop {
     margin-right: 6em;
     padding: 1.5em 2em 0 2em; } }
+
+@media all and (min-width: 75em) {
+  fieldset {
+    margin: 0 23em;
+    left: 17em;
+    top: -15em; } }
 
 .hero-text-position,
 .text-position {
@@ -494,4 +507,10 @@ input[type=number],
   .slider-text {
     line-height: 2.5; }
   .footer-text {
-    margin-left: 3em; } }
+    margin-left: 3em; }
+  .booking-hero-text-pos-desk {
+    text-align: left;
+    margin-left: 10em; }
+  .booking-hero-desk {
+    width: 22em;
+    padding: 0; } }

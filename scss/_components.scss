@@ -102,8 +102,13 @@ input[type=number],
      Tablet Style
    ================= */
    @media all and (min-width: 31.25em) {
+    .btn-display {
+        display: none;
+    }
+
        fieldset {
         margin: 2em 3em;
+        top: -4em;
        }
 
        .credentials-style {
@@ -139,4 +144,14 @@ input[type=number],
         margin-right: 6em;
         padding: 1.5em 2em 0 2em;
     }
+}
+
+@media all and (min-width: 75em) {
+    fieldset {
+        margin: 0 23em;
+        left: 17em;
+        top: -15em;
+    }
+
+
 }

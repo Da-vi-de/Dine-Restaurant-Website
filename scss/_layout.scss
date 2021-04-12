@@ -152,6 +152,10 @@
     .slider-container {
         margin-left: 4.5em;
     }
+
+    .booking-hero {
+        background-image: url(../images/booking/hero-bg-tablet.jpg);
+    }
 }
 
 /* =================
@@ -259,6 +263,10 @@
     .footer-desk-pos {
         display: flex;
         justify-content: space-between;
+    }
+
+    .booking-hero {
+        background-image: url(../images/booking/hero-bg-desktop@2x.jpg);
     }
 }
 
