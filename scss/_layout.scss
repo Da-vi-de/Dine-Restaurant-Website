@@ -1,10 +1,10 @@
 .hero {
-    margin: auto;
-    position: relative;
-    padding: 8em 0.5em; 
-    background-image: url(../images/homepage/hero-bg-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include hero-positioning(8em 0.5em);
+    @include background(
+        url(../images/homepage/hero-bg-mobile.jpg), 
+        cover, 
+        null
+    );
     color: #fff;
 }
 
@@ -31,8 +31,7 @@
 .enjoy-place-img,
 .locally-sourced-img,
 .family-gathering-img {
-    width: 100%;
-    height: auto;
+    @include images-size(100%, auto);
 }
 
 .salmon-img,
@@ -43,15 +42,16 @@
 }
 
 .footer-container {
-   display: flex;
-   flex-direction: column;
+   @include flex(column);
 }
 
 .footer-bg-img {
     padding: 2.5em 1em;
-    background-image: url(../images/homepage/ready-bg-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include background(
+        url(../images/homepage/ready-bg-mobile.jpg), 
+        cover, 
+        null
+    );
 } 
 
 .footer-info-bottom {
@@ -59,13 +59,12 @@
 }
 
 .booking-hero {
-    margin: auto;
-    position: relative;
-    padding: 4em 1em; 
-    background-image: url(../images/booking/hero-bg-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff; 
+    @include hero-positioning(4em 1em);
+    @include background(
+        url(../images/booking/hero-bg-mobile.jpg), 
+        cover, 
+        null
+    ); 
 }
 
 @media all and (min-width: 23.4375em) {
@@ -102,14 +101,13 @@
     }
 
     .highlights {
-        display: flex;
+        @include flex(null, null);
     }
 
     .salmon-img,
     .beef-img,
     .chocolate-img {
-        width: 8em;
-        height: 6em;
+        @include images-size(8em, 6em);
         padding-right: 2em;
     }
 
@@ -118,18 +116,19 @@
     }
 
     .slider {
-        display: flex;
+        @include flex(null, null);
     }
 
     .footer-bg-img {
-        background-image: url(../images/homepage/ready-bg-tablet.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+        @include background(
+            url(../images/homepage/ready-bg-tablet.jpg),
+            cover, 
+            null
+        );
     }
 
     .footer-bottom {
-        display: flex;
-        justify-content: space-around;
+        @include flex(null, space-around);
     }
 
     .footer-info {
@@ -173,8 +172,7 @@
 
     .enjoy-place-img,
     .locally-sourced-img {
-        width: 20em;
-        height: 23em;
+        @include images-size(20em, 23em);
     }
 
     .locally-sourced-img {
@@ -184,9 +182,9 @@
     }
 
     .desk-content-text-pos-1 {
-        position: absolute;
-        width: 26.875em;
-        top: 3em;
+        @include content-text-desktop(
+            absolute, 2626.875em, 3em, null
+            );
     }
 
     .right {
@@ -194,14 +192,13 @@
     }
 
    .desk-content-text-pos-2 {
-       position: relative;
-       width: 26em;
-       right: 4em;
+        @include content-text-desktop(
+            relative, 26em, null, 4em
+            );
    }
 
    .family-gathering-img {
-       width: 33.75em;
-       height: 37.5em;
+       @include images-size(33.75em, 37.5em);
        margin-left: 6em;
    }
 
@@ -226,7 +223,7 @@
     }
 
    .highlights-container {
-       display: flex;
+       @include flex(null, null);
        padding: 2em 2em;
     }
 
@@ -235,12 +232,11 @@
     }
 
    .slider-container-desk {
-       display: flex;
+        @include flex(null, null);
     }
 
    .slider-pos-desk {
-    display: flex;
-    flex-direction: column;
+        @include flex(column, null);
     }
 
    .slider {
@@ -249,20 +245,20 @@
     }
 
    .family-gathering-img {
-        width: 20em;
-        height: 25em;
+        @include images-size(20em, 25em);
         margin-left: 0;
     }
 
     .footer-bg-img {
-        background-image: url(../images/homepage/ready-bg-desktop.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+        @include background(
+            url(../images/homepage/ready-bg-desktop.jpg), 
+            cover, 
+            null
+        );
     }
 
     .footer-desk-pos {
-        display: flex;
-        justify-content: space-between;
+        @include flex(null, space-between);
     }
 
     .booking-hero {
@@ -287,50 +283,3 @@
          margin-left: 2.2em;
      }
 }
-
-
-
-
-
-
-//////////////////////////////////////////////////////////////////////////////////////
-
-/*.content-container {
-    display: grid;
-    grid-template-rows: minmax(1.5em, 1.5fr)  minmax(1em, 1fr);
-    padding: 1em 1.5em; 
-}
-
-.row-image-1 {
-    background-image: url(../images/homepage/enjoyable-place-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.row-image-2 {
-    background-image: url(../images/homepage/locally-sourced-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-} 
-
- .menu-img-1 {
-    background-image: url(../images/homepage/salmon-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.menu-img-2 {
-    background-image: url(../images/homepage/beef-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.menu-img-3 {
-    background-image: url(../images/homepage/chocolate-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-} */
-
-
-
-

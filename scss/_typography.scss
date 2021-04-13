@@ -29,11 +29,10 @@
 }
 
 .slider-text {
-    line-height: 2;
+    @include text-space-size(2, $font-size-xsm);
     padding-right: 1.5em;
     text-transform: uppercase;
     color: $color-shuttle-gray;
-    font-size: $font-size-xsm;
 }
 
 .footer-text,
@@ -83,9 +82,8 @@
     }
 
     .slider-text {
-        line-height: 1.4;
+        @include text-space-size(1.4, $font-size-tablet-xxsm);
         white-space: nowrap;
-        font-size: $font-size-tablet-xxsm;
     }
 
     .description-text {
@@ -97,9 +95,8 @@
     }
 
     .footer-info-text {
+        @include text-space-size(1, $font-size-tablet-xsm);
         margin-right: 1em;
-        font-size: $font-size-tablet-xsm;
-        line-height: 1;
     }
 
     .footer-title {

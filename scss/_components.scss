@@ -4,23 +4,34 @@
 }
 
 .btn-primary {
-    color: $color-white;
-    border: 1px solid $color-white;
-
+    @include button-style(
+        $color-white, 
+        1px solid $color-white, 
+        null
+    );
+    
     &:hover {
-        color: $color-cod-grey;
-        background-color: $color-white;
+        @include button-style(
+            $color-cod-grey, 
+            null, 
+            $color-white
+        );
     }
 }
 
 .btn-secondary {
-    color: $color-cod-grey;
-    border: 1px solid $color-cod-grey;
-    background-color: $color-white;
-
+    @include button-style(
+        $color-cod-grey, 
+        1px solid $color-cod-grey, 
+        $color-white
+    );
+    
     &:hover {
-        color: $color-white;
-        background-color: $color-cod-grey;
+        @include button-style(
+            $color-white, 
+            null, 
+            $color-cod-grey
+        );
     }
 }
 
@@ -88,10 +99,11 @@ input[type=number],
 }
 
 .idl-choice {
-    background-image: url(../images/icons/icon-arrow.svg);
-    background-repeat: no-repeat;
-    background-size: $font-size-xsm;
-    background-position: right;
+    @include background(
+        url(../images/icons/icon-arrow.svg),
+        $font-size-xsm, 
+        right
+    );
 }
 
 .sign-icon {
