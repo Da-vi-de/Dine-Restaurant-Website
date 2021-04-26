@@ -39,14 +39,14 @@ a {
     display: inline-block;
 }
 
-.underline::after {
-    content: '';
-    display: block;
-    width: 30%;
-    margin: 0 auto;
-    top: 24.14%;
-    bottom: 75%; 
-    border: 0.2px solid $color-beaver;
+.underline__active::after {
+        content: '';
+        display: block;
+        width: 5%;
+        margin: 0 auto;
+        top: 24.14%;
+        bottom: 75%; 
+        border: 0.2px solid $color-beaver;
 }
 
 .footer-bottom {
@@ -101,10 +101,11 @@ input[type=number],
 .idl-choice {
     @include background(
         url(../images/icons/icon-arrow.svg),
-        $font-size-xsm, 
+        null,
         right
     );
 }
+
 
 .sign-icon {
     padding: 0 2.5em;
@@ -171,6 +172,10 @@ input[type=number],
 }
 
 @media all and (min-width: 75em) {
+    .underline::after {
+        width: 10%;
+    }
+
     fieldset {
         margin: 0 23em;
         left: 17em;

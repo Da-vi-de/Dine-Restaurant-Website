@@ -23,16 +23,30 @@
     padding: 2em 0;
 }
 
+.slider {
+    margin-left: 3em;
+    text-align: center;
+}
+
 .enjoy-place-img {
   position: relative;
   top: -2em;
 }
 
+.slider__img {
+    display: none;
+}
+
+.slider__img--active {
+    display: unset;
+}
+
 .enjoy-place-img,
 .locally-sourced-img,
-.family-gathering-img {
+.slider__img--active {
     @include images-size(100%, auto);
 }
+
 
 .salmon-img,
 .beef-img,
@@ -40,9 +54,10 @@
     width: 100%;
     padding-top: 0.5em;
 }
+ 
 
 .footer-container {
-   @include flex(column);
+   @include flex(column, null);
 }
 
 .footer-bg-img {
@@ -64,7 +79,8 @@
         url(../images/booking/hero-bg-mobile.jpg), 
         cover, 
         null
-    ); 
+    );
+    color: #fff; 
 }
 
 @media all and (min-width: 23.4375em) {
@@ -73,7 +89,7 @@
     }
 
     .content-container,
-    .slider-container {
+    .slider__container {
         margin-left: 2em;
     } 
 }
@@ -183,7 +199,7 @@
 
     .desk-content-text-pos-1 {
         @include content-text-desktop(
-            absolute, 2626.875em, 3em, null
+            absolute, 26.875em, 4em, null
             );
     }
 
@@ -197,13 +213,13 @@
             );
    }
 
-   .family-gathering-img {
+   .slider__img--active {
        @include images-size(33.75em, 37.5em);
        margin-left: 6em;
    }
 
    .slider {
-       margin-left: 7em;
+       margin-left: 9em;
    }
 }
 
@@ -240,11 +256,11 @@
     }
 
    .slider {
-       display: unset;
+       flex-direction: column;
        order: 2;
     }
 
-   .family-gathering-img {
+   .slider__img--active {
         @include images-size(20em, 25em);
         margin-left: 0;
     }
@@ -275,7 +291,7 @@
         left: 58em;
      }
 
-     .family-gathering-img {
+     .slider__img--active {
          margin-left: 6.5em;
      }
 

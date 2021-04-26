@@ -151,28 +151,62 @@
         <!--Slider-->
       <div class="slider-container">
 
-        <div class="slider-container-desk">
+        <div class="slider-container-desk  ">
 
-          <picture>
+        <picture>
             <source media="(min-width: 900px)" srcset="./images/homepage/family-gathering-desktop@2x.jpg">
             <source media="(min-width: 500px)" srcset="./images/homepage/family-gathering-tablet.jpg">
             <img src="./images/homepage/family-gathering-mobile.jpg" 
-                 alt="Happy people having lunch"
-                 class="family-gathering-img"
+                 alt="Happy people dining"
+                 class="slider__images slider__img slider__img--active slider__img--1"
             >
          </picture>
 
-        <div class="slider-pos-desk"> 
+        <picture>
+          <source media="(min-width: 900px)" srcset="./images/homepage/special-events-desktop@2x.jpg">
+          <source media="(min-width: 500px)" srcset="./images/homepage/special-events-tablet.jpg">
+          <img src="./images/homepage/special-events-mobile.jpg" 
+               alt="Happy people dining"
+               class="slider__images slider__img  slider__img--2"
+          >
+        </picture>
 
-            <ul class="slider">
-              <li><a href="#" class="slider-text underline">Family Gathering</a></li>
-              <li><a href="#" class="slider-text">Special Events</a></li>
-              <li><a href="#" class="slider-text">Social Events</a></li>
-            </ul>
-        
+        <picture>
+          <source media="(min-width: 900px)" srcset="./images/homepage/social-events-desktop@2x.jpg">
+          <source media="(min-width: 500px)" srcset="./images/homepage/social-events-tablet.jpg">
+          <img src="./images/homepage/social-events-mobile.jpg" 
+               alt="People dining"
+               class="slider__images slider__img  slider__img--3"
+          >
+        </picture>
+
+       <div class="slider-pos-desk"> 
+
+        <div class="slider slider__tab--container">
+          <button data-tab="1" class="slider__tab 
+                                      slider-text  
+                                      underline__active 
+                                      underline--1"
+          >    Family Gathering
+          </button>
+          <button data-tab="2" class="slider__tab 
+                                      slider-text  
+                                      underline--2"
+          >    Special Events
+          </button>
+          <button data-tab="3" class="slider__tab 
+                                      slider-text   
+                                      underline--3"
+          >
+               Social Events
+          </button>
+        </div> 
+
+        <div class="slider__content slider__content--active slider__content--1 ">
+
             <article class="slider-text-desk text-position">
-              <h2 class="content-text">Family Gathering</h2>
-              <p class="description-text">
+              <h2 class="slider-content-text">Family Gathering</h2>
+              <p class="slider-description-text">
                 We love catering for entire families. So please bring everyone along for a special meal with your 
                 loved ones. We’ll provide a memorable experience for all.
               </p>
@@ -180,12 +214,48 @@
                  class="btn btn-secondary btn-slider-desk" 
                  target="_self"
               >
-              Book a table
-            </a>
+                Book a table
+             </a>
           </article>
-        </div> 
+        </div>
+
+
+        <div class="slider__content slider__content--2 ">
+
+            <article class="slider-text-desk text-position">
+              <h2 class="slider-content-text">Special Events</h2>
+              <p class="slider-description-text">
+                Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you. 
+                We’ll be sure to mark your special date with an unforgettable meal.
+              </p>
+              <a href="/booking.html" 
+                 class="btn btn-secondary btn-slider-desk" 
+                 target="_self"
+              >
+                Book a table
+             </a>
+          </article>
+        </div>
+ 
+      <div class="slider__content slider__content--3 ">
+
+          <article class="slider-text-desk text-position">
+            <h2 class="slider-content-text">Social Events</h2>
+            <p class="slider-description-text">
+              Are you looking to have a larger social event? No problem! We’re more than happy to cater for big 
+              parties. We’ll work with you to make your event a hit with everyone.
+            </p>
+            <a href="/booking.html" 
+                 class="btn btn-secondary btn-slider-desk" 
+                 target="_self"
+              >
+                Book a table
+             </a>
+        </article>
       </div>
-    </div>
+    </div> 
+  </div>
+</div> 
 
           <!--Footer-->
     <footer class="footer-container">
@@ -210,25 +280,3 @@
     </footer>
   </body>
   </html> 
-
-      <!-- 
-         <div class="slider-image-2"></div>
-
-        <div class="col-5">
-          <h3 class="content-text">Special Events</h3>
-          <p class="description-text">
-            Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you. 
-            We’ll be sure to mark your special date with an unforgettable meal.
-          </p>
-        </div>
-
-        <div class="slider-image-3"></div>
-
-        <div class="col-5">
-          <h3 class="content-text"> Social Events</h3>
-          <p class="description-text">
-            Are you looking to have a larger social event? No problem! We’re more than happy to cater for big 
-            parties. We’ll work with you to make your event a hit with everyone.
-          </p>
-        </div>
-      -->
