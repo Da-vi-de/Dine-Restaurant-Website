@@ -29,6 +29,9 @@ label {
   display: none;
   visibility: hidden; }
 
+small {
+  font-size: 0.65rem; }
+
 .hero {
   margin: auto;
   position: relative;
@@ -102,7 +105,7 @@ label {
   .hero {
     padding: 10em 0.5em; }
   .content-container,
-  .slider-container {
+  .slider__container {
     margin-left: 2em; } }
 
 /* =================
@@ -288,17 +291,21 @@ fieldset {
 hr, .credentials-style {
   width: 80%; }
 
+.form__control small {
+  visibility: hidden; }
+
+.form__control.error small {
+  visibility: visible;
+  color: red; }
+
 hr, input {
   background: transparent;
   border: none;
   border-bottom: 1px solid #5c687a; }
 
-input[type=number],
-.idl-choice {
-  width: 25%; }
-  input[type=number]:placeholder-shown,
-  .idl-choice:placeholder-shown {
-    text-align: center; }
+input[type=number] {
+  width: 25%;
+  text-align: center; }
 
 :placeholder-shown {
   padding: 0.5em 0; }
@@ -306,13 +313,9 @@ input[type=number],
 .time-form-style {
   white-space: nowrap; }
 
-.idl-choice {
-  background-image: url(../images/icons/icon-arrow.svg);
-  background-repeat: no-repeat;
-  background-position: right; }
-
 .sign-icon {
-  padding: 0 2.5em; }
+  border: none;
+  background: transparent; }
 
 /* =================
      Tablet Style
@@ -354,8 +357,6 @@ input[type=number],
     padding: 1.5em 2em 0 2em; } }
 
 @media all and (min-width: 75em) {
-  .underline::after {
-    width: 10%; }
   fieldset {
     margin: 0 23em;
     left: 17em;

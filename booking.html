@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;700&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="css/main.css">
-  <script defer src="script.js"></script>
   
   <title>Frontend Mentor | Dine Website Challenge</title>
 </head>
@@ -29,30 +28,40 @@
   </header>
 
        <!-- Form -->
-      <form>
+      <form id="form">
         <fieldset>
-
-        <label for="name">Your name is required</label>
-          <input id="name" type = "text" placeholder="Name" class="credentials-style">
+        
+      <div class="form__control">
+        <label for="username">Your name is required</label>
+          <input id="username" type = "text" placeholder="Name" class="credentials-style">
+          <br>
+          <small>Error message</small>
+      </div>
 
         <br>
 
+      <div  class="form__control">
         <label for="email">Your email address is required</label>
           <input id="email" type = "email" placeholder="Email" class="credentials-style">
+          <br>
+          <small>Error message</small>
+      </div>
 
         <br>
 
             <span>Pick a date</span>
 
-          <div class="time-form-style">
+          <div class="time-form-style form__control">
             <label for="month">Choose the month</label>
-              <input id="month" type="number" placeholder="MM">
+              <input id="month" type="number" min="1" max="12" placeholder="MM">
           
             <label for="day">Choose the day</label>
-              <input id="day" type="number" placeholder="DD">
+              <input id="day" type="number" min="1" max="31" placeholder="DD">
             
             <label for="year">Choose the year</label>
-              <input id="year" type="number" placeholder="YYYY">
+              <input id="year" type="number" min="2021" max="2022" placeholder="YYYY">
+              <br>
+              <small>Error message</small>
           </div>
 
         <br>
@@ -60,30 +69,38 @@
             <span>Pick a time</span>
             <label>Pick a time</label>
 
-          <div class="time-form-style">
+          <div class="time-form-style form__control">
             <label for="hour">Choose hour</label>
-            <input id="hour" type="number" placeholder="09">
+            <input id="hour" type="number" min="09" max="21" placeholder="09">
           
             <label for="minutes">Choose minutes</label>
-            <input id="minutes" type="number" placeholder="00">
-         
-            <label for="idl">Choose am or pm</label>             <!-- idl stands for: Intenational Date Line -->
-            <input id="idl" type="button" value="AM" class="idl-choice"> 
+            <input id="minutes" type="number" min="0" max="30" placeholder="00">
+            <br>
+            <small>Error message</small>
           </div>
 
         <br>
 
-          <img src="./images/icons/icon-minus.svg" 
-               alt="minus icon for decreasing number of booked people"
-               class="sign-icon"
-          >
-          <span class="people-number"><strong>4 people</strong></span>
-        
-          <img src="./images/icons/icon-plus.svg" 
-               alt="plus icon for increasing number of booked people"
-               class="sign-icon"
-          >
+          <button class="sign-icon" id="minus">
+            <img src="./images/icons/icon-minus.svg" 
+                alt="minus icon for decreasing number of booked people"
+                class="icon_minus"
+            >
+          </button>
 
+          <span id= "people-number">
+            <strong>4</strong>
+          </span>
+          <span id="solo-or-more">
+            <strong>people</strong>
+          </span>
+        
+          <button class="sign-icon" id="plus">
+            <img src="./images/icons/icon-plus.svg" 
+                 alt="minus icon for increasing number of booked people"
+                 class="icon-plus"
+            >
+          </button>
           <hr>
         
         <br>
@@ -98,4 +115,7 @@
   onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"
   >
   </iframe>
+</body>
+ <script defer src="script.js"></script>
+</html>
 

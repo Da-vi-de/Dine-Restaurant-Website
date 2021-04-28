@@ -75,19 +75,24 @@ hr, .credentials-style {
     width: 80%;
 }
 
+.form__control small {
+    visibility: hidden;
+}
+
+.form__control.error small {
+    visibility: visible;
+    color: $color-red;
+}
+
 hr, input {
     background: transparent;
     border: none;
     border-bottom: 1px solid $color-shuttle-gray;
 }
 
-input[type=number],
-.idl-choice {
-    width: 25%;
-
-    &:placeholder-shown {
-        text-align: center;
-  }      
+input[type=number] {
+     width: 25%;
+     text-align: center;    
 }
 
 :placeholder-shown {
@@ -98,18 +103,13 @@ input[type=number],
     white-space: nowrap;
 }
 
-.idl-choice {
-    @include background(
-        url(../images/icons/icon-arrow.svg),
-        null,
-        right
-    );
-}
-
 
 .sign-icon {
-    padding: 0 2.5em;
+    border: none;
+    background: transparent;
 }
+
+
 
 /* =================
      Tablet Style
@@ -172,10 +172,6 @@ input[type=number],
 }
 
 @media all and (min-width: 75em) {
-    .underline::after {
-        width: 10%;
-    }
-
     fieldset {
         margin: 0 23em;
         left: 17em;
