@@ -415,6 +415,10 @@ input[type=number] {
 .footer-info-text {
   text-transform: uppercase; }
 
+.people-number,
+.solo-or-more {
+  font-weight: 700; }
+
 /* =================
      Tablet Style
    ================= */
