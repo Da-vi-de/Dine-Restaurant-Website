@@ -415,6 +415,13 @@ input[type=number] {
 .footer-info-text {
   text-transform: uppercase; }
 
+.website-name a {
+  color: white; }
+  .website-name a:visited,
+  .website-name a :hover,
+  .website-name a :active {
+    color: white; }
+
 .people-number,
 .solo-or-more {
   font-weight: 700; }

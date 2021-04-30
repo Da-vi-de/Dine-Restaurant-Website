@@ -55,6 +55,16 @@
     text-transform: uppercase;
 }
 
+.website-name a{
+    color: $color-white;
+
+    &:visited,
+     :hover,
+     :active {
+      color: $color-white;
+  }
+}
+
 .people-number,
 .solo-or-more {
     font-weight: 700;
