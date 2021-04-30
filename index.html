@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/main.css">
+  
+  
+  <title>Frontend Mentor | Dine Website Challenge</title>
+</head>
+<body>
+        
+        <!--Header-->
+    <header class="hero">
+
+        <section class="hero-text-position">
+          <h1 class="website-name"><strong>dine</strong></h1>
+          <h1 class="hero-intro">Exquisite dining since 1989</h1>
+          <p class="hero-description">
+              Experience our seasonal menu in beautiful country surroundings.
+              Eat the freshest produce from the comfort of our farmhouse.
+          </p>
+          <a href="/booking.html" 
+             class="btn btn-primary" 
+             target="_self">
+            Book a table
+          </a>
+        </section>
+    </header>
+ 
+   
+        <!--Website content-->
+      <div class="content-container">
+
+      <picture>
+        <source media="(min-width: 900px)" srcset="./images/homepage/enjoyable-place-desktop@2x.jpg">
+        <source media="(min-width: 500px)" srcset="./images/homepage/enjoyable-place-tablet.jpg">
+        <img src="./images/homepage/enjoyable-place-mobile.jpg"
+             alt="A valley with sheeps and a house in distance"
+             class="enjoy-place-img"
+        >
+      </picture>
+
+          <article class="text-position desk-content-text-pos-1 right">
+            <h2 class="content-text">Enjoyable place for all the family</h2>
+            <p class="description-text"> 
+              Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange 
+              a tour of the farm before your meal.
+            </p>
+          </article> 
+    </div>
+
+      <div class="content-container">
+
+          <picture>
+            <source media="(min-width: 900px)" srcset="./images/homepage/locally-sourced-desktop@2x.jpg">
+            <source media="(min-width: 500px)" srcset="./images/homepage/locally-sourced-tablet.jpg">
+            <img src="./images/homepage/locally-sourced-mobile.jpg"
+                 alt="A hand working with a spoon on dish"
+                 class="locally-sourced-img"
+            >
+          </picture>
+         
+          <article class="text-position desk-content-text-pos-2">
+            <h2 class="content-text">The most locally sourced food</h2>
+            <p class="description-text"> 
+              All our ingredients come directly from our farm or local fishery. So you can be sure that you’re 
+              eating the freshest, most sustainable food.
+            </p>
+          </article>
+    </div>
+  
+        <!--Website Menu Highlights-->
+    <div class="highlights-container">
+
+        <article class="highlights-intro text-position">
+          <h2 class="menu-intro">A few highlights from our menu</h2>
+          <p class="menu-description">
+            We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites. 
+            Our menu is revamped every season.
+          </p>
+        </article>
+
+  <div class="highlights-desktop">
+
+    <div class="highlights">
+
+      <picture>
+        <source media="(min-width: 500px)" srcset="./images/homepage/salmon-desktop-tablet@2x.jpg">
+        <img src="./images/homepage/salmon-mobile.jpg"
+             alt="Salmon fillet with buckwheat summer salad" 
+             class="salmon-img"
+        >
+      </picture>
+
+        <article class="highlights-text text-position">
+          <h3 class="dish-title">Seared Salmon Fillet</h3>
+          <p class="dish-description">
+            Our locally sourced salmon served with a refreshing buckwheat summer salad.
+          </p>
+        </article>
+    </div>
+      
+          <hr class="line">
+
+    <div class="highlights">
+
+      <picture>
+        <source media="(min-width: 500px)" srcset="./images/homepage/beef-desktop-tablet@2x.jpg">
+        <img src="./images/homepage/beef-mobile.jpg" 
+             alt="Rosemary filet mignon" 
+             class="beef-img"
+        >
+      </picture>
+
+          <article class="highlights-text text-position">
+            <h3 class="dish-title">Rosemary Filet Mignon</h3>
+            <p class="dish-description">
+              Our prime beef served to your taste with a delicious choice of seasonal sides.
+            </p>
+          </article>
+    </div>
+
+            <hr class="line">
+
+    <div class="highlights">
+
+      <picture>
+         <source media="(min-width: 500px)" srcset="./images/homepage/chocolate-desktop-tablet@2x.jpg">
+         <img src="./images/homepage/chocolate-mobile.jpg" 
+              alt="Chocolate mousse with summer fruits" 
+              class="chocolate-img"
+         >
+      </picture>
+
+          <article class="highlights-text text-position">
+            <h3 class="dish-title">Summer Fruit Chocolate Mousse</h3>
+            <p class="dish-description">
+              Creamy mousse combined with summer fruits and dark chocolate shavings.
+            </p>
+          </article>
+    </div>
+  </div>
+</div>
+    
+
+        <!--Slider / Tab component-->
+      <div class="slider-container">
+
+        <div class="slider-container-desk  ">
+
+        <picture>
+            <source media="(min-width: 900px)" srcset="./images/homepage/family-gathering-desktop@2x.jpg">
+            <source media="(min-width: 500px)" srcset="./images/homepage/family-gathering-tablet.jpg">
+            <img src="./images/homepage/family-gathering-mobile.jpg" 
+                 alt="Happy people dining"
+                 class="slider__images slider__img slider__img--active slider__img--1"
+            >
+         </picture>
+
+        <picture>
+          <source media="(min-width: 900px)" srcset="./images/homepage/special-events-desktop@2x.jpg">
+          <source media="(min-width: 500px)" srcset="./images/homepage/special-events-tablet.jpg">
+          <img src="./images/homepage/special-events-mobile.jpg" 
+               alt="Happy people dining"
+               class="slider__images slider__img  slider__img--2"
+          >
+        </picture>
+
+        <picture>
+          <source media="(min-width: 900px)" srcset="./images/homepage/social-events-desktop@2x.jpg">
+          <source media="(min-width: 500px)" srcset="./images/homepage/social-events-tablet.jpg">
+          <img src="./images/homepage/social-events-mobile.jpg" 
+               alt="People dining"
+               class="slider__images slider__img  slider__img--3"
+          >
+        </picture>
+
+       <div class="slider-pos-desk"> 
+
+        <div class="slider slider__tab--container">
+          <button data-tab="1" class="slider__tab 
+                                      slider-text  
+                                      underline__active 
+                                      underline--1"
+          >    Family Gathering
+          </button>
+          <button data-tab="2" class="slider__tab 
+                                      slider-text  
+                                      underline--2"
+          >    Special Events
+          </button>
+          <button data-tab="3" class="slider__tab 
+                                      slider-text   
+                                      underline--3"
+          >
+               Social Events
+          </button>
+        </div> 
+
+        <div class="slider__content slider__content--active slider__content--1 ">
+
+            <article class="slider-text-desk text-position">
+              <h2 class="slider-content-text">Family Gathering</h2>
+              <p class="slider-description-text">
+                We love catering for entire families. So please bring everyone along for a special meal with your 
+                loved ones. We’ll provide a memorable experience for all.
+              </p>
+              <a href="/booking.html" 
+                 class="btn btn-secondary btn-slider-desk" 
+                 target="_self"
+              >
+                Book a table
+             </a>
+          </article>
+        </div>
+
+
+        <div class="slider__content slider__content--2 ">
+
+            <article class="slider-text-desk text-position">
+              <h2 class="slider-content-text">Special Events</h2>
+              <p class="slider-description-text">
+                Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you. 
+                We’ll be sure to mark your special date with an unforgettable meal.
+              </p>
+              <a href="/booking.html" 
+                 class="btn btn-secondary btn-slider-desk" 
+                 target="_self"
+              >
+                Book a table
+             </a>
+          </article>
+        </div>
+ 
+      <div class="slider__content slider__content--3 ">
+
+          <article class="slider-text-desk text-position">
+            <h2 class="slider-content-text">Social Events</h2>
+            <p class="slider-description-text">
+              Are you looking to have a larger social event? No problem! We’re more than happy to cater for big 
+              parties. We’ll work with you to make your event a hit with everyone.
+            </p>
+            <a href="/booking.html" 
+                 class="btn btn-secondary btn-slider-desk" 
+                 target="_self"
+              >
+                Book a table
+             </a>
+        </article>
+      </div>
+    </div> 
+  </div>
+</div> 
+
+          <!--Footer-->
+    <footer class="footer-container">
+
+      <div class="footer-bg-img text-position footer-desk-pos">
+        <h2 class="footer-text">Ready to make a reservation?</h2>
+        <a href="/booking.html" 
+           class="btn btn-primary btn-footer-desktop" 
+           target="_self">
+         Book a table
+       </a>
+      </div>
+                <!--index and booking share the same footer bottom,
+                so i noticed repetitive code, i created a separate 
+                file (kind of component) so that can be included where needed. 
+                I did some research and i found more ways, i chose this one which 
+                is the  easyest and the best in my personal opinion -->
+      <iframe src="footer-bottom.html" 
+              onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"
+              title="footer-bottom"
+      >
+      </iframe>
+    </footer>
+  </body>
+  <script defer src="script.js"></script>
+  </html> 

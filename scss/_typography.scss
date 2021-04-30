@@ -1,0 +1,279 @@
+.hero-text-position, 
+.text-position {
+    text-align: center;
+}
+
+.website-name {
+    font-size: $font-size-md;
+}
+
+.hero-intro {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.hero-description {
+    padding: 0 0.2em 2em 0.2em;
+}
+
+.description-text {
+    font-size: $font-size-xxsm;
+}
+
+.highlights-text,
+.highlights-intro,
+.footer-text,
+.footer-title,
+.footer-info-text {
+    color: $color-white;
+}
+
+.slider-text {
+    @include text-space-size(2, $font-size-xsm);
+    padding-right: 1.5em;
+    text-transform: uppercase;
+    color: $color-shuttle-gray;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+
+.slider__content {
+    display: none;
+}
+
+.slider__content--active {
+    display: unset;
+}
+
+.footer-text,
+.footer-title {
+    font-size: $font-size-mds;
+}
+
+.footer-info-text {
+    text-transform: uppercase;
+}
+
+.website-name a{
+    color: $color-white;
+
+    &:visited,
+     :hover,
+     :active {
+      color: $color-white;
+  }
+}
+
+.people-number,
+.solo-or-more {
+    font-weight: 700;
+}
+
+/* =================
+     Tablet Style
+   ================= */
+@media all and (min-width: 31.25em) {
+    .hero-intro {
+        padding: 0 2em;
+        font-size: $font-size-md;
+    }
+
+    .hero-description {
+        font-size: $font-size-xsm;
+    }
+
+    .hero-text-position {
+        padding: 1em 2em;
+    }
+
+    .highlights-intro {
+        padding-bottom: 2em;
+    }
+
+    .menu-intro {
+        padding: 0 2em;
+    }
+
+    .highlights-text {
+        text-align: left;
+    }
+
+    .dish-title {
+        font-size: $font-size-tablet-sm;
+    }
+
+    .dish-description {
+        font-size: $font-size-tablet-xsm;
+    }
+
+    .slider-text {
+        @include text-space-size(1.4, $font-size-tablet-xxsm);
+        white-space: nowrap;
+    }
+
+    .description-text,
+    .slider-description-text {
+        padding: 0 2em;
+    }
+
+    .footer-info {
+        margin-right: 1em;
+    }
+
+    .footer-info-text {
+        @include text-space-size(1, $font-size-tablet-xsm);
+        margin-right: 1em;
+    }
+
+    .footer-title {
+        padding: 0 1em;
+    }
+}
+
+@media all and (min-width: 43.75em) {
+    .hero-intro {
+        padding: 0 4.5em;
+    }
+
+    .hero-description {
+        padding: 0 6em 2em 6em;
+    }
+
+    .content-text,
+    .slider-content-text {
+        padding: 0 4em;
+        font-size: $font-size-md;
+    }
+
+    .description-text,
+    .slider-description-text {
+        padding: 0 8em 2em 8em;  
+    }
+
+    .menu-intro,
+    .menu-description {
+        padding: 0 7em;
+    }
+
+    .dish-description {
+        padding-right: 7em;
+    }
+
+    .slider-text {
+        font-size: $font-size-xxsm;
+    }
+}
+
+/* =================
+     Desktop Style
+   ================= */
+@media all and (min-width: 56.25em) {
+    .hero-text-position {
+        max-width: 50%;
+        margin-left: 2.5em;
+        text-align: left;
+    }
+
+    .hero-intro,
+    .hero-description  {
+      padding: 0;
+    }
+
+    .hero-intro {
+        font-size: $font-size-desktop-md;
+    }
+
+    .content-text,
+    .slider-content-text {
+        font-size: $font-size-mds;
+    }
+
+    .description-text,
+    .slider-description-text {
+        text-align: center;
+    }
+
+    .menu-description {
+        padding: 0 10em;
+    }
+
+    .footer-text {
+        margin-right: 1em;
+    }
+
+  .booking-hero-desk {
+      padding: 0 10em;
+    }
+}
+
+@media all and (min-width: 75em) {
+  .hero-text-position {
+      max-width: 37%;
+  }
+
+  .content-text,
+  .description-text,
+  .slider-content-text,
+  .slider-description-text {
+      text-align: left;
+  }
+
+  .content-text,
+  .slider-content-text {
+    margin-left: .5em;
+}
+
+  .description-text,
+  .slider-description-text {
+      width: 38em;  
+  }
+
+  .highlights-intro {
+    width: 70%;
+    padding-top: 5em;
+  }
+  .menu-intro,
+  .menu-description {
+    text-align: left;
+  }
+
+  .menu-description {
+      margin-left: 1.7em;
+  }
+
+  .slider-text-desk {
+      margin-left: 15em;
+      order: 1;
+  }
+  
+  .slider-text {
+      line-height: 2.5; 
+  }
+
+  .footer-text {
+      margin-left: 3em;
+  }
+
+  .booking-hero-text-pos-desk{
+      text-align: left;
+      margin-left: 10em;
+  }
+
+  .booking-hero-desk {
+    width: 22em;
+    padding: 0;
+  }
+
+}
+
+@media all and (min-width: 93.25em) {
+    .menu-description {
+        margin-left: 0;
+        padding: 0 12em;
+    }
+
+    .footer-text {
+        margin-left: 6.5em;
+    }
+}

@@ -4,7 +4,7 @@
   "description": "![Design preview for the Dine Website Challenge coding challenge](./preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "watch": "node-sass -o css src/scss/main.scss -w"
+    "watch": "node-sass -o css ./scss/main.scss -w"
   },
   "keywords": [],
   "author": "",

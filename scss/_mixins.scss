@@ -1,0 +1,50 @@
+@mixin background($background-image, $background-size, $background-position) {
+    background-image: $background-image;
+    background-repeat: no-repeat;
+    background-size: $background-size;
+    background-position: $background-position;
+}
+
+@mixin hero-positioning($padding) {
+    margin: auto;
+    position: relative;
+    padding: $padding;
+}
+
+@mixin images-size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flex($flex-direction, $justify-content) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+}
+
+@mixin content-text-desktop(
+    $position,
+    $width,
+    $top,
+    $right
+) {
+    position: $position;
+    width: $width;
+    top: $top;
+    right: $right;
+}
+
+@mixin text-space-size($line-height, $font-size) {
+    line-height: $line-height;
+    font-size: $font-size;
+}
+
+@mixin button-style(
+    $color, 
+    $border, 
+    $background-color
+) {
+    color: $color;
+    border: $border;
+    background-color: $background-color;
+}

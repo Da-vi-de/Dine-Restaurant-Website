@@ -1,0 +1,191 @@
+.btn {
+    text-transform: uppercase;
+    padding: 1em 2em;
+}
+
+.btn-primary {
+    @include button-style(
+        $color-white, 
+        1px solid $color-white, 
+        null
+    );
+    
+    &:hover {
+        @include button-style(
+            $color-cod-grey, 
+            null, 
+            $color-white
+        );
+    }
+}
+
+.btn-secondary {
+    @include button-style(
+        $color-cod-grey, 
+        1px solid $color-cod-grey, 
+        $color-white
+    );
+    
+    &:hover {
+        @include button-style(
+            $color-white, 
+            null, 
+            $color-cod-grey
+        );
+    }
+}
+
+a {
+    display: inline-block;
+}
+
+
+.underline__active::after {
+        content: '';
+        display: block;
+        width: 5%;
+        margin: 0 auto;
+        top: 24.14%;
+        bottom: 75%; 
+        border: 0.2px solid $color-beaver;
+}
+
+.footer-bottom {
+    background-color: $color-cod-grey;
+    padding: 2em 0;
+}
+
+/* =================
+         Form
+   ================= */
+fieldset {
+    position: relative;
+    top: -3em;
+    margin: 1em 1em;
+    padding: 1.5em 0;
+    border: 0.2px solid $color-white;
+    background-color: $color-white;
+    -webkit-box-shadow: 0 5px 10px $color-shuttle-gray;
+    -moz-box-shadow: 0 5px 10px $color-shuttle-gray;
+    box-shadow: 0 5px 10px $color-shuttle-gray;
+    text-align: center;
+    line-height: 2;
+}
+
+hr, .credentials-style {
+    width: 80%;
+}
+
+.form__control small {
+    visibility: hidden;
+}
+
+.form__control.error small {
+    visibility: visible;
+    color: $color-red;
+}
+
+hr, input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $color-shuttle-gray;
+}
+
+input[type=number] {
+     width: 25%;
+     text-align: center;    
+}
+
+:placeholder-shown {
+    padding: 0.5em 0;
+}
+
+.time-form-style {
+    white-space: nowrap;
+}
+
+
+.sign-icon {
+    border: none;
+    background: transparent;
+}
+
+
+
+/* =================
+     Tablet Style
+   ================= */
+   @media all and (min-width: 31.25em) {
+    .btn-display {
+        display: none;
+    }
+
+       fieldset {
+        margin: 2em 3em;
+        top: -4em;
+       }
+
+       .credentials-style {
+        padding-top: 1em;
+       }
+   }
+
+   .sign-icon {
+    padding: 0 4em;
+}
+
+   @media all and (min-width: 43.75em) {
+    fieldset {
+        margin: 1em 6em;
+       }
+
+       .sign-icon {
+        padding: 0 5em;
+     }
+   }
+
+/* =================
+    Desktop Style
+================= */ 
+@media all and (min-width: 56.25em) {
+   .btn-footer-desktop {
+       margin-right: 2em;
+   }
+
+   fieldset {
+       margin: 0.5em 13em;
+   }
+
+   .credentials-style {
+    padding-top: 1.5em;
+   }
+}
+
+@media all and (min-width: 75em) {
+    .btn-slider-desk {
+        margin: 0 6em 2em 0;
+    }
+
+    .btn-footer-desktop {
+        margin-right: 6em;
+        padding: 1.5em 2em 0 2em;
+    }
+}
+
+@media all and (min-width: 75em) {
+    fieldset {
+        margin: 0 23em;
+        left: 17em;
+        top: -15em;
+    }
+
+    .btn-footer-desktop {
+        margin-right: 9.5em;
+    }
+}
+
+@media all and (min-width: 93.25em) {
+    fieldset {
+        margin: 0 32em;
+    }
+}
